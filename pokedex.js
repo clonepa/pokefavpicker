@@ -6103,6 +6103,7 @@ pokedex = [
   {
     "dexNumber": 678,
     "filename": "678f",
+    "icon": "678-f",
     "name": "Meowstic (Female)",
     "type": [
       "Psychic"
