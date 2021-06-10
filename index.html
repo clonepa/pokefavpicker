@@ -1,1 +1,379 @@
 
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pokemon Fav Picker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+    <script
+		src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+		crossorigin="anonymous">
+	
+	</script>
+	<script type="text/javascript" src="pokedex.js"></script>
+    <script>
+
+	$( document ).ready(function() {
+		var filename = ""
+		var appendString = "";
+		var typeString = "";
+		var typeFilename = "";
+		var idCurrentSquare = "";
+		var iconString = "";
+		var iconFilename ="";
+		var pickerModal = document.getElementById('pickerModal');
+
+		for (var i in pokedex){
+			appendString = '';
+			typeString = '';
+			iconString = '';
+
+			for (var t in pokedex[i].type){
+				typeFilename = pokedex[i].type[t].toLowerCase() + ".gif";
+				typeString += '<img src="./img/type/' + typeFilename + '" />';
+			};
+
+			filename = "";
+			if (pokedex[i].filename != null)
+				filename = pokedex[i].filename + ".png";
+			else
+				filename = String(pokedex[i].dexNumber).padStart(3, '0') + ".png";
+
+			iconFilename = "";
+			if (pokedex[i].icon != null)
+				iconFilename = pokedex[i].icon + ".png";
+			else
+				iconFilename = String(pokedex[i].dexNumber).padStart(3, '0') + ".png";
+
+			iconString = "<img src='./img/icons/" + iconFilename + "' />";
+
+			appendString += '<tr class="trPkmnList"'; 
+			appendString += 	'data-pkmn-name="' + pokedex[i].name + '" ';
+			appendString += 	'data-pkmn-dex="' + pokedex[i].dexNumber + '" ';
+			appendString += 	'data-pkmn-filename="' + filename + '" ';
+			appendString +=		'>';
+			appendString += 	'<td>';
+			appendString += 		'<i>' + String(pokedex[i].dexNumber).padStart(3,'0') + '</i>';
+			appendString += 	'</td>';	
+			appendString +=		'<td>';
+			appendString +=     iconString;
+			appendString +=		'</td>';
+			appendString +=		'<td style="text-align: left;">';
+			appendString += 		pokedex[i].name ;
+			appendString += 	'</td>';
+			appendString += 	'<td style="text-align: left;">';
+			appendString +=			typeString;
+			appendString += 	'</td>';
+			appendString += '</tr>';
+
+			$( '#tbPkmnList' ).append(appendString); 
+		}
+
+		pickerModal.addEventListener('show.bs.modal', function (event) {
+
+			$("#inputSearch").val('');
+			$("#inputSearch").trigger('keyup');
+			idCurrentSquare = $( event.relatedTarget ).attr("id");
+
+		});
+
+		pickerModal.addEventListener('shown.bs.modal', function (event) {
+			$("#inputSearch").focus();
+		});
+
+		$('.pickable').each(function(i, obj) {
+
+    		$( obj ).attr("id", i);
+    		$( obj ).attr("data-bs-toggle", "modal");
+    		$( obj ).attr("data-bs-target", "#pickerModal"); 
+		});
+
+		$('.trPkmnList').click(function() {
+			var newHTML = "<img src='./img/sprites/" + $( this ).attr('data-pkmn-filename') + "' />";
+			
+			$( "#" + idCurrentSquare ).html(newHTML);
+			var modalInstance = bootstrap.Modal.getInstance(pickerModal);
+			modalInstance.hide();
+		});
+
+		$("#inputSearch").on("keyup", function() {
+	    	var searchValue = $(this).val().toLowerCase();
+	    	$("#tbPkmnList tr").filter(function() {
+	      		$(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1);
+	    	});
+	  	});
+
+	});
+    </script>
+    <div class="containerDiv">
+    <table style="max-width: 2209px">
+    	<tr>
+    		<td class="label cell">Pick your<br/>favorites!</td>
+    		<td class="label cell">Normal</td>
+    		<td class="label cell">Fire</td>
+    		<td class="label cell">Grass</td>
+    		<td class="label cell">Water</td>
+    		<td class="label cell">Electric</td>
+    		<td class="label cell">Ice</td>
+    		<td class="label cell">Fighting</td>
+    		<td class="label cell">Poison</td>
+    		<td class="label cell">Ground</td>
+    		<td class="label cell">Flying</td>
+    		<td class="label cell">Psychic</td>
+    		<td class="label cell">Bug</td>
+    		<td class="label cell">Rock</td>
+    		<td class="label cell">Ghost</td>
+    		<td class="label cell">Dragon</td>
+    		<td class="label cell">Dark</td>
+    		<td class="label cell">Steel</td>
+    		<td class="label cell">Fairy</td>
+    		<td class="label cell">Starter</td>
+    		<td class="label cell">Mega/<br/>G-Max</td>
+    		<td class="label cell">Legend</td>
+    		<td class="label cell">Overall<br/>Favorite</td>
+    	</tr>
+    	<tr>
+    		<td class="label cell">Generation<br/>I</td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    	</tr>
+    	<tr>
+    		<td class="label cell">Generation<br/>II</td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    	</tr>
+    	<tr>
+    		<td class="label cell">Generation<br/>III</td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    	</tr>
+    	<tr>
+    		<td class="label cell">Generation<br/>IV</td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    	</tr>
+    	<tr>
+    		<td class="label cell">Generation<br/>V</td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    	</tr>
+    	<tr>
+    		<td class="label cell">Generation<br/>VI</td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    	</tr>
+    	<tr>
+    		<td class="label cell">Generation<br/>VII</td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    	</tr>
+    	<tr>
+    		<td class="label cell">Generation<br/>VIII</td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    		<td class="pickable cell"></td>
+    	</tr>
+    </table>
+</div>
+
+<div class="modal" tabindex="-1" id="pickerModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Pokemon Picker</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input class="search" id="inputSearch" placeholder="Search..." />
+        <hr/>
+        <div id="divPkmnList" style="overflow-y: auto; height: 350px;">
+        	<table style="width: 100%;">
+        		<thead>
+        			<th style="width:60px; text-align: center;">
+        				#
+        			</th>
+        			<th>
+        			</th>
+        			<th>
+        				Name
+        			</th>
+        			<th>
+        				Type
+        			</th>
+        		</thead>
+        		<tbody id="tbPkmnList">
+        			
+        		</tbody>
+        	</table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</body>
+</html>
