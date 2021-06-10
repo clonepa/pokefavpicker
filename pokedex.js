@@ -263,9 +263,33 @@ pokedex = [
     ]
   },
   {
+    "dexNumber": 19,
+    "name": "Alolan Rattata",
+    "filename": "019_2",
+    "icon": "019-a",
+    "regional": true,
+    "gen": 7,    
+    "type": [
+      "Dark",
+      "Normal"
+    ]
+  },
+  {
     "dexNumber": 20,
     "name": "Raticate",
     "type": [
+      "Normal"
+    ]
+  },
+  {
+    "dexNumber": 20,
+    "name": "Alolan Raticate",
+    "filename": "020_2",
+    "icon": "020-a",
+    "regional": true,
+    "gen": 7,    
+    "type": [
+      "Dark",
       "Normal"
     ]
   },
@@ -325,6 +349,18 @@ pokedex = [
     ]
   },
   {
+    "dexNumber": 26,
+    "name": "Alolan Raichu",
+    "filename": "026_2",
+    "icon": "026-a",
+    "regional": true,
+    "gen": 7,    
+    "type": [
+      "Electric",
+      "Psychic"
+    ]
+  },
+  {
     "dexNumber": 27,
     "name": "Sandshrew",
     "type": [
@@ -332,10 +368,34 @@ pokedex = [
     ]
   },
   {
+    "dexNumber": 27,
+    "name": "Alolan Sandshrew",
+    "filename": "027_2",
+    "icon": "027-a",
+    "regional": true,
+    "gen": 7,    
+    "type": [
+      "Ice",
+      "Steel"
+    ]
+  },
+  {
     "dexNumber": 28,
     "name": "Sandslash",
     "type": [
       "Ground"
+    ]
+  },
+  {
+    "dexNumber": 28,
+    "name": "Alolan Sandslash",
+    "filename": "028_2",
+    "icon": "028-a",
+    "regional": true,
+    "gen": 7,    
+    "type": [
+      "Ice",
+      "Steel"
     ]
   },
   {
@@ -404,10 +464,33 @@ pokedex = [
     ]
   },
   {
+    "dexNumber": 37,
+    "name": "Alolan Vulpix",
+    "filename": "037_2",
+    "icon": "037-a",
+    "regional": true,
+    "gen": 7,    
+    "type": [
+      "Ice"
+    ]
+  },
+  {
     "dexNumber": 38,
     "name": "Ninetales",
     "type": [
       "Fire"
+    ]
+  },
+  {
+    "dexNumber": 38,
+    "name": "Alolan Ninetales",
+    "filename": "038_2",
+    "icon": "038-a",
+    "regional": true,
+    "gen": 7,    
+    "type": [
+      "Ice",
+      "Fairy"
     ]
   },
   {
@@ -506,6 +589,18 @@ pokedex = [
     ]
   },
   {
+    "dexNumber": 50,
+    "name": "Alolan Diglett",
+    "filename": "050_2",
+    "icon": "050-a",
+    "regional": true,
+    "gen": 7,    
+    "type": [
+      "Ground",
+      "Steel"
+    ]
+  },
+  {
     "dexNumber": 51,
     "name": "Dugtrio",
     "type": [
@@ -513,10 +608,33 @@ pokedex = [
     ]
   },
   {
+    "dexNumber": 51,
+    "name": "Alolan Dugtrio",
+    "filename": "051_2",
+    "icon": "051-a",
+    "regional": true,
+    "gen": 7,    
+    "type": [
+      "Ground",
+      "Steel"
+    ]
+  },
+  {
     "dexNumber": 52,
     "name": "Meowth",
     "type": [
       "Normal"
+    ]
+  },
+  {
+    "dexNumber": 52,
+    "name": "Alolan Meowth",
+    "filename": "052_2",
+    "icon": "052-a",
+    "regional": true,
+    "gen": 7,    
+    "type": [
+      "Dark"
     ]
   },
   {
@@ -535,6 +653,17 @@ pokedex = [
     "name": "Persian",
     "type": [
       "Normal"
+    ]
+  },
+  {
+    "dexNumber": 53,
+    "name": "Alolan Persian",
+    "filename": "053_2",
+    "icon": "053-a",
+    "regional": true,
+    "gen": 7,    
+    "type": [
+      "Dark"
     ]
   },
   {
@@ -714,6 +843,18 @@ pokedex = [
     ]
   },
   {
+    "dexNumber": 74,
+    "name": "Alolan Geodude",
+    "filename": "074_2",
+    "icon": "074-a",
+    "regional": true,
+    "gen": 7,    
+    "type": [
+      "Rock",
+      "Electric"
+    ]
+  },
+  {
     "dexNumber": 75,
     "name": "Graveler",
     "type": [
@@ -722,11 +863,35 @@ pokedex = [
     ]
   },
   {
+    "dexNumber": 75,
+    "name": "Alolan Graveler",
+    "filename": "075_2",
+    "icon": "075-a",
+    "regional": true,
+    "gen": 7,    
+    "type": [
+      "Rock",
+      "Electric"
+    ]
+  },
+  {
     "dexNumber": 76,
     "name": "Golem",
     "type": [
       "Rock",
       "Ground"
+    ]
+  },
+  {
+    "dexNumber": 76,
+    "name": "Alolan Golem",
+    "filename": "076_2",
+    "icon": "076-a",
+    "regional": true,
+    "gen": 7,    
+    "type": [
+      "Rock",
+      "Electric"
     ]
   },
   {
@@ -834,10 +999,34 @@ pokedex = [
     ]
   },
   {
+    "dexNumber": 88,
+    "name": "Alolan Grimer",
+    "filename": "088_2",
+    "icon": "088-a",
+    "regional": true,
+    "gen": 7,    
+    "type": [
+      "Poison",
+      "Dark"
+    ]
+  },
+  {
     "dexNumber": 89,
     "name": "Muk",
     "type": [
       "Poison"
+    ]
+  },
+  {
+    "dexNumber": 89,
+    "name": "Alolan Muk",
+    "filename": "089_2",
+    "icon": "089-a",
+    "regional": true,
+    "gen": 7,
+    "type": [
+      "Poison",
+      "Dark"
     ]
   },
   {
@@ -981,6 +1170,18 @@ pokedex = [
     ]
   },
   {
+    "dexNumber": 103,
+    "name": "Alolan Exeggutor",
+    "filename": "103_2",
+    "icon": "103-a",
+    "regional": true,
+    "gen": 7,    
+    "type": [
+      "Grass",
+      "Dragon"
+    ]
+  },
+  {
     "dexNumber": 104,
     "name": "Cubone",
     "type": [
@@ -992,6 +1193,18 @@ pokedex = [
     "name": "Marowak",
     "type": [
       "Ground"
+    ]
+  },
+  {
+    "dexNumber": 105,
+    "name": "Alolan Marowak",
+    "filename": "105_2",
+    "icon": "105-a",
+    "regional": true,
+    "gen": 7,
+    "type": [
+      "Fire",
+      "Ghost"
     ]
   },
   {
