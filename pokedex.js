@@ -6892,6 +6892,7 @@ pokedex = [
   },
   {
     "dexNumber": 773,
+    "filename": "773_1",
     "name": "Silvally",
     "type": [
       "Normal"
@@ -7930,7 +7931,7 @@ pokedex = [
     "dexNumber": 876,
     "name": "Indeedee (Female)",
     "icon": "876_f",
-    "filename": "876_f",
+    "filename": "876f",
     "type": [
       "Psychic",
       "Normal"
@@ -7940,7 +7941,7 @@ pokedex = [
     "dexNumber": 876,
     "name": "Indeedee (Male)",
     "icon": "876_m",
-    "filename": "876_m",
+    "filename": "876m",
     "type": [
       "Psychic",
       "Normal"

@@ -98,7 +98,7 @@
 		});
 
 		$('.trPkmnList').click(function() {
-			var newHTML = "<img src='./img/sprites/" + $( this ).attr('data-pkmn-filename') + "' />";
+			var newHTML = "<img src='./img/sprites/" + $( this ).attr('data-pkmn-filename') + "' title='" +  $( this ).attr('data-pkmn-name')  + "' />";
 			
 			$( "#" + idCurrentSquare ).html(newHTML);
 			var modalInstance = bootstrap.Modal.getInstance(pickerModal);
