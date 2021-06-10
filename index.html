@@ -22,6 +22,7 @@
 		var appendString = "";
 		var typeString = "";
 		var typeFilename = "";
+        var typeText = "";
 		var idCurrentSquare = "";
 		var iconString = "";
 		var iconFilename ="";
@@ -29,13 +30,17 @@
 
 		for (var i in pokedex){
 			appendString = '';
-			typeString = '';
-			iconString = '';
+			typeImgTag = '';
+			iconImgTag = '';
+            typeText = '';
 
 			for (var t in pokedex[i].type){
 				typeFilename = pokedex[i].type[t].toLowerCase() + ".gif";
-				typeString += '<img src="./img/type/' + typeFilename + '" />';
+				typeImgTag += '<img src="./img/type/' + typeFilename + '" />';
+                typeText += pokedex[i].type[t] + ";";
 			};
+
+            typeText = "<span style='display: none;'>" + typeText + "</span>";
 
 			filename = "";
 			if (pokedex[i].filename != null)
@@ -49,7 +54,7 @@
 			else
 				iconFilename = String(pokedex[i].dexNumber).padStart(3, '0') + ".png";
 
-			iconString = "<img src='./img/icons/" + iconFilename + "' />";
+			iconImgTag = "<img src='./img/icons/" + iconFilename + "' />";
 
 			appendString += '<tr class="trPkmnList"'; 
 			appendString += 	'data-pkmn-name="' + pokedex[i].name + '" ';
@@ -60,13 +65,13 @@
 			appendString += 		'<i>' + String(pokedex[i].dexNumber).padStart(3,'0') + '</i>';
 			appendString += 	'</td>';	
 			appendString +=		'<td>';
-			appendString +=     iconString;
+			appendString +=     iconImgTag;
 			appendString +=		'</td>';
 			appendString +=		'<td style="text-align: left;">';
 			appendString += 		pokedex[i].name ;
 			appendString += 	'</td>';
 			appendString += 	'<td style="text-align: left;">';
-			appendString +=			typeString;
+			appendString +=			typeImgTag + typeText;
 			appendString += 	'</td>';
 			appendString += '</tr>';
 
