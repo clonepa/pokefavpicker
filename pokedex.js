@@ -3380,6 +3380,7 @@ pokedex = [
   {
     "dexNumber": 351,
     "filename": "351-s",
+    "icon": "351-s",
     "name": "Castform (Sunny Form)",
     "type": [
       "Normal"
@@ -3388,6 +3389,7 @@ pokedex = [
   {
     "dexNumber": 351,
     "filename": "351-r",
+    "icon": "351-r",
     "name": "Castform (Rainy Form)",
     "type": [
       "Normal"
@@ -3396,6 +3398,7 @@ pokedex = [
   {
     "dexNumber": 351,
     "filename": "351-i",
+    "icon": "351-i",
     "name": "Castform (Snowy Form)",
     "type": [
       "Normal"
@@ -3988,17 +3991,55 @@ pokedex = [
   },
   {
     "dexNumber": 412,
-    "name": "Burmy",
+    "name": "Burmy (Plant Cloak)",
+    "type": [
+      "Bug"
+    ]
+  },
+  {
+    "dexNumber": 412,
+    "name": "Burmy (Sandy Cloak)",
+    "filename": "412-c",
+    "icon": "412-s",
+    "type": [
+      "Bug"
+    ]
+  },
+  {
+    "dexNumber": 412,
+    "name": "Burmy (Trash Cloak)",
+    "filename": "412-s",
+    "icon": "412-t",
     "type": [
       "Bug"
     ]
   },
   {
     "dexNumber": 413,
-    "name": "Wormadam",
+    "name": "Wormadam (Plant Cloak)",
     "type": [
       "Bug",
       "Grass"
+    ]
+  },
+  {
+    "dexNumber": 413,
+    "name": "Wormadam (Sandy Cloak)",
+    "filename": "413-c",
+    "icon": "413-s",
+    "type": [
+      "Bug",
+      "Ground"
+    ]
+  },
+  {
+    "dexNumber": 413,
+    "name": "Wormadam (Trash Cloak)",
+    "filename": "413-s",
+    "icon": "413-t",
+    "type": [
+      "Bug",
+      "Steel"
     ]
   },
   {
