@@ -28,9 +28,3 @@ td {
 	overflow-x: auto;
 	white-space: nowrap;
 }
-
-.tdGenHeader {
-  text-align: center;
-  font-style: italic;
-  color: #bbbbbb;
-}
