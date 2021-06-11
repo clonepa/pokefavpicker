@@ -4061,6 +4061,15 @@ pokedex = [
     ]
   },
   {
+    "dexNumber": 421,
+    "filename": "421-s",
+    "icon": "421-s",
+    "name": "Cherrim",
+    "type": [
+      "Grass"
+    ]
+  },
+  {
     "dexNumber": 422,
     "name": "Shellos",
     "type": [
