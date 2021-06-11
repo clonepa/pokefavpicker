@@ -7135,7 +7135,68 @@ pokedex = [
   {
     "dexNumber": 774,
     "filename": "774_2",
+    "icon": "774-b",
     "name": "Minior (Blue Core)",
+    "type": [
+      "Rock",
+      "Flying"
+    ]
+  },
+  {
+    "dexNumber": 774,
+    "filename": "774_3",
+    "icon": "774-g",
+    "name": "Minior (Green Core)",
+    "type": [
+      "Rock",
+      "Flying"
+    ]
+  },
+  {
+    "dexNumber": 774,
+    "filename": "774_4",
+    "icon": "774-i",
+    "name": "Minior (Indigo Core)",
+    "type": [
+      "Rock",
+      "Flying"
+    ]
+  },
+  {
+    "dexNumber": 774,
+    "filename": "774_5",
+    "icon": "774-o",
+    "name": "Minior (Orange Core)",
+    "type": [
+      "Rock",
+      "Flying"
+    ]
+  },
+  {
+    "dexNumber": 774,
+    "filename": "774_6",
+    "icon": "774-r",
+    "name": "Minior (Red Core)",
+    "type": [
+      "Rock",
+      "Flying"
+    ]
+  },
+  {
+    "dexNumber": 774,
+    "filename": "774_7",
+    "icon": "774-v",
+    "name": "Minior (Violet Core)",
+    "type": [
+      "Rock",
+      "Flying"
+    ]
+  },
+  {
+    "dexNumber": 774,
+    "filename": "774_8",
+    "icon": "774-y",
+    "name": "Minior (Yellow Core)",
     "type": [
       "Rock",
       "Flying"
