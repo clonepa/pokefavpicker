@@ -639,6 +639,17 @@ pokedex = [
   },
   {
     "dexNumber": 52,
+    "name": "Galarian Meowth",
+    "filename": "052_3",
+    "icon": "052_3",
+    "regional": true,
+    "gen": 8,    
+    "type": [
+      "Steel"
+    ]
+  },
+  {
+    "dexNumber": 52,
     "name": "Gigantamax Meowth",
     "icon": "052_g",
     "filename": "transform/052_g",
@@ -7121,6 +7132,15 @@ pokedex = [
     ]
   },
   {
+    "dexNumber": 774,
+    "filename": "774_2",
+    "name": "Minior (Blue Core)",
+    "type": [
+      "Rock",
+      "Flying"
+    ]
+  },
+  {
     "dexNumber": 775,
     "name": "Komala",
     "type": [
@@ -7451,6 +7471,7 @@ pokedex = [
   },
   {
     "dexNumber": 812,
+    "filename": "812_1",
     "name": "Rillaboom",
     "type": [
       "Grass"
