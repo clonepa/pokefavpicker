@@ -4112,14 +4112,33 @@ pokedex = [
   },
   {
     "dexNumber": 422,
-    "name": "Shellos",
+    "name": "Shellos (West Sea)",
+    "type": [
+      "Water"
+    ]
+  },
+  {
+    "dexNumber": 422,
+    "name": "Shellos (East Sea)",
+    "filename": "422-e",
+    "icon": "422-e",
     "type": [
       "Water"
     ]
   },
   {
     "dexNumber": 423,
-    "name": "Gastrodon",
+    "name": "Gastrodon (West Sea)",
+    "type": [
+      "Water",
+      "Ground"
+    ]
+  },
+  {
+    "dexNumber": 423,
+    "name": "Gastrodon (East Sea)",
+    "filename": "423-e",
+    "icon": "423-e",
     "type": [
       "Water",
       "Ground"
@@ -4594,6 +4613,56 @@ pokedex = [
     "type": [
       "Electric",
       "Ghost"
+    ]
+  },
+  {
+    "dexNumber": 479,
+    "name": "Fan Rotom",
+    "filename": "479-s",
+    "icon": "479s",
+    "type": [
+      "Electric",
+      "Flying"
+    ]
+  },
+  {
+    "dexNumber": 479,
+    "name": "Frost Rotom",
+    "filename": "479-f",
+    "icon": "479f",
+    "type": [
+      "Electric",
+      "Ice"
+    ]
+  },
+  {
+    "dexNumber": 479,
+    "name": "Heat Rotom",
+    "filename": "479-h",
+    "icon": "479h",
+    "type": [
+      "Electric",
+      "Fire"
+    ]
+  },
+  {
+    "dexNumber": 479,
+    "name": "Mow Rotom",
+    "filename": "479-m",
+    "icon": "479m",
+    "type": [
+      "Electric",
+      "Grass"
+    ]
+  },
+  {
+    "dexNumber": 479,
+    "name": "Wash Rotom",
+    "filename": "479-w",
+    "icon": "479w",
+    "type": [
+      "Electric",
+      "Water"
     ]
   },
   {
