@@ -6174,7 +6174,18 @@ pokedex = [
   },
   {
     "dexNumber": 668,
-    "name": "Pyroar",
+    "name": "Pyroar (Female)",
+    "icon": "668-f",
+    "filename": "668f",
+    "type": [
+      "Fire",
+      "Normal"
+    ]
+  },
+  {
+    "dexNumber": 668,
+    "name": "Pyroar (Male)",
+    "filename": "668m",
     "type": [
       "Fire",
       "Normal"
