@@ -29,3 +29,8 @@ td {
 	white-space: nowrap;
 }
 
+.tdGenHeader {
+  text-align: center;
+  font-style: italic;
+  color: #bbbbbb;
+}

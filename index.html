@@ -56,6 +56,26 @@
 
 			iconImgTag = "<img src='./img/icons/" + iconFilename + "' />";
 
+            var spacerLeft = '<tr><td class="tdGenHeader" colspan="4"><div><hr style="float: left; width: 40%"/>';
+            var spacerRight = '<hr style="float: right; width: 40%"/></div></td></tr>';
+
+            if (pokedex[i].dexNumber == 1)
+                appendString += spacerLeft + 'Gen I' + spacerRight; 
+            else if (pokedex[i].dexNumber == 152)
+                appendString += spacerLeft + 'Gen II' + spacerRight; 
+            else if (pokedex[i].dexNumber == 252)
+                appendString += spacerLeft + 'Gen III' + spacerRight; 
+            else if (pokedex[i].dexNumber == 387)
+                appendString += spacerLeft + 'Gen IV' + spacerRight; 
+            else if (pokedex[i].dexNumber == 494)
+                appendString += spacerLeft + 'Gen V' + spacerRight; 
+            else if (pokedex[i].dexNumber == 650)
+                appendString += spacerLeft + 'Gen VI' + spacerRight; 
+            else if (pokedex[i].dexNumber == 722)
+                appendString += spacerLeft + 'Gen VII' + spacerRight; 
+            else if (pokedex[i].dexNumber == 810)
+                appendString += spacerLeft + 'Gen VIII' + spacerRight; 
+
 			appendString += '<tr class="trPkmnList"'; 
 			appendString += 	'data-pkmn-name="' + pokedex[i].name + '" ';
 			appendString += 	'data-pkmn-dex="' + pokedex[i].dexNumber + '" ';
@@ -98,8 +118,8 @@
 		});
 
 		$('.trPkmnList').click(function() {
+
 			var newHTML = "<img src='./img/sprites/" + $( this ).attr('data-pkmn-filename') + "' title='" +  $( this ).attr('data-pkmn-name')  + "' />";
-			
 			$( "#" + idCurrentSquare ).html(newHTML);
 			var modalInstance = bootstrap.Modal.getInstance(pickerModal);
 			modalInstance.hide();
@@ -107,7 +127,7 @@
 
 		$("#inputSearch").on("keyup", function() {
 	    	var searchValue = $(this).val().toLowerCase();
-	    	$("#tbPkmnList tr").filter(function() {
+	    	$("#tbPkmnList .trPkmnList").filter(function() {
 	      		$(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1);
 	    	});
 	  	});
@@ -380,7 +400,7 @@
         <input class="search" id="inputSearch" placeholder="Search..." />
         <hr/>
         <div id="divPkmnList" style="overflow-y: auto; height: 350px;">
-        	<table style="width: 100%;">
+        	<table style="width: 98%;">
         		<thead>
         			<th style="width:60px; text-align: center;">
         				#

@@ -6632,7 +6632,7 @@ pokedex = [
   },
   {
     "dexNumber": 716,
-    "filename": "716_1",
+    "filename": "716_2",
     "name": "Xerneas (Neutral Mode)",
     "type": [
       "Fairy"
@@ -6640,7 +6640,7 @@ pokedex = [
   },
   {
     "dexNumber": 716,
-    "filename": "716_2",
+    "filename": "716_1",
     "name": "Xerneas (Active Mode)",
     "type": [
       "Fairy"
@@ -6905,6 +6905,7 @@ pokedex = [
   },
   {
     "dexNumber": 745,
+    "filename": "745_1",
     "name": "Lycanroc",
     "type": [
       "Rock"
@@ -7165,6 +7166,7 @@ pokedex = [
   },
   {
     "dexNumber": 778,
+    "filename": "778_1",
     "name": "Mimikyu",
     "type": [
       "Ghost",
@@ -7266,6 +7268,7 @@ pokedex = [
   },
   {
     "dexNumber": 791,
+    "filename": "791_1",
     "name": "Solgaleo",
     "type": [
       "Psychic",
@@ -7377,6 +7380,7 @@ pokedex = [
   {
     "dexNumber": 801,
     "name": "Magearna",
+    "filename": "801_1",
     "type": [
       "Steel",
       "Fairy"
@@ -7385,6 +7389,7 @@ pokedex = [
   {
     "dexNumber": 802,
     "name": "Marshadow",
+    "filename": "802_2",
     "type": [
       "Fighting",
       "Ghost"
@@ -7450,7 +7455,6 @@ pokedex = [
     "filename": "transform/809_g",
     "transform": true,
     "gen": 8,
-    "filename": "809_1",
     "type": [
       "Steel"
     ]
@@ -8030,7 +8034,7 @@ pokedex = [
     "transform": true,
     "gen": 8,
     "type": [
-      "Psychic",
+      "Dark",
       "Fairy"
     ]
   },
