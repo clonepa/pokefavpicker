@@ -6172,6 +6172,7 @@ pokedex = [
   {
     "dexNumber": 669,
     "filename": "669_2",
+    "icon": "669-y",
     "name": "Flabébé (Yellow Flower)",
     "type": [
       "Fairy"
@@ -6180,6 +6181,7 @@ pokedex = [
   {
     "dexNumber": 669,
     "filename": "669_3",
+    "icon": "669-b",
     "name": "Flabébé (Blue Flower)",
     "type": [
       "Fairy"
@@ -6188,6 +6190,7 @@ pokedex = [
   {
     "dexNumber": 669,
     "filename": "669_4",
+    "icon": "669-o",
     "name": "Flabébé (Orange Flower)",
     "type": [
       "Fairy"
@@ -6196,6 +6199,7 @@ pokedex = [
   {
     "dexNumber": 669,
     "filename": "669_5",
+    "icon": "669-w",
     "name": "Flabébé (White Flower)",
     "type": [
       "Fairy"
@@ -6212,6 +6216,7 @@ pokedex = [
   {
     "dexNumber": 670,
     "filename": "670_2",
+    "icon": "670-y",
     "name": "Floette (Yellow Flower)",
     "type": [
       "Fairy"
@@ -6220,6 +6225,7 @@ pokedex = [
   {
     "dexNumber": 670,
     "filename": "670_3",
+    "icon": "670-b",
     "name": "Floette (Blue Flower)",
     "type": [
       "Fairy"
@@ -6228,6 +6234,7 @@ pokedex = [
   {
     "dexNumber": 670,
     "filename": "670_4",
+    "icon": "670-o",
     "name": "Floette (Orange Flower)",
     "type": [
       "Fairy"
@@ -6236,6 +6243,7 @@ pokedex = [
   {
     "dexNumber": 670,
     "filename": "670_5",
+    "icon": "670-w",
     "name": "Floette (White Flower)",
     "type": [
       "Fairy"
@@ -6244,6 +6252,7 @@ pokedex = [
   {
     "dexNumber": 670,
     "filename": "670_6",
+    "icon": "670-e",
     "name": "Floette (Eternal Flower)",
     "type": [
       "Fairy"
@@ -6260,6 +6269,7 @@ pokedex = [
   {
     "dexNumber": 671,
     "filename": "671_2",
+    "icon": "671-y",
     "name": "Florges (Yellow Flower)",
     "type": [
       "Fairy"
@@ -6268,6 +6278,7 @@ pokedex = [
   {
     "dexNumber": 671,
     "filename": "671_3",
+    "icon": "671-b",
     "name": "Florges (Blue Flower)",
     "type": [
       "Fairy"
@@ -6276,6 +6287,7 @@ pokedex = [
   {
     "dexNumber": 671,
     "filename": "671_4",
+    "icon": "671-o",
     "name": "Florges (Orange Flower)",
     "type": [
       "Fairy"
@@ -6284,6 +6296,7 @@ pokedex = [
   {
     "dexNumber": 671,
     "filename": "671_5",
+    "icon": "671-w",
     "name": "Florges (White Flower)",
     "type": [
       "Fairy"
