@@ -6717,7 +6717,7 @@ pokedex = [
     "name": "Hoopa (Unbound)",
     "type": [
       "Psychic",
-      "Ghost"
+      "Dark"
     ]
   },
   {
