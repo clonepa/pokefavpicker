@@ -5977,6 +5977,7 @@ pokedex = [
   {
     "dexNumber": 666,
     "filename": "666_2",
+    "icon": "666PolMS6",
     "name": "Vivillon (Polar Pattern)",
     "type": [
       "Bug",
@@ -5986,6 +5987,7 @@ pokedex = [
   {
     "dexNumber": 666,
     "filename": "666_3",
+    "icon": "666TunMS6",
     "name": "Vivillon (Tundra Pattern)",
     "type": [
       "Bug",
@@ -5995,6 +5997,7 @@ pokedex = [
   {
     "dexNumber": 666,
     "filename": "666_4",
+    "icon": "666ConMS6",
     "name": "Vivillon (Continental Pattern)",
     "type": [
       "Bug",
@@ -6004,6 +6007,7 @@ pokedex = [
   {
     "dexNumber": 666,
     "filename": "666_5",
+    "icon": "666GarMS6",
     "name": "Vivillon (Garden Pattern)",
     "type": [
       "Bug",
@@ -6013,6 +6017,7 @@ pokedex = [
   {
     "dexNumber": 666,
     "filename": "666_6",
+    "icon": "666EleMS6",
     "name": "Vivillon (Elegant Pattern)",
     "type": [
       "Bug",
@@ -6022,6 +6027,7 @@ pokedex = [
   {
     "dexNumber": 666,
     "filename": "666_7",
+    "icon": "666IcyMS6",
     "name": "Vivillon (Icy Snow Pattern)",
     "type": [
       "Bug",
@@ -6031,6 +6037,7 @@ pokedex = [
   {
     "dexNumber": 666,
     "filename": "666_8",
+    "icon": "666ModMS6",
     "name": "Vivillon (Modern Pattern)",
     "type": [
       "Bug",
@@ -6040,6 +6047,7 @@ pokedex = [
   {
     "dexNumber": 666,
     "filename": "666_9",
+    "icon": "666MarMS6",
     "name": "Vivillon (Marine Pattern)",
     "type": [
       "Bug",
@@ -6049,6 +6057,7 @@ pokedex = [
   {
     "dexNumber": 666,
     "filename": "666_10",
+    "icon": "666ArcMS6",
     "name": "Vivillon (Archipelago Pattern)",
     "type": [
       "Bug",
@@ -6058,6 +6067,7 @@ pokedex = [
   {
     "dexNumber": 666,
     "filename": "666_11",
+    "icon": "666HigMS6",
     "name": "Vivillon (High Plains Pattern)",
     "type": [
       "Bug",
@@ -6067,6 +6077,7 @@ pokedex = [
   {
     "dexNumber": 666,
     "filename": "666_12",
+    "icon": "666SanMS6",
     "name": "Vivillon (Sandstorm Pattern)",
     "type": [
       "Bug",
@@ -6076,6 +6087,7 @@ pokedex = [
   {
     "dexNumber": 666,
     "filename": "666_13",
+    "icon": "666RivMS6",
     "name": "Vivillon (River Pattern)",
     "type": [
       "Bug",
@@ -6085,6 +6097,7 @@ pokedex = [
   {
     "dexNumber": 666,
     "filename": "666_14",
+    "icon": "666MonMS6",
     "name": "Vivillon (Monsoon Pattern)",
     "type": [
       "Bug",
@@ -6094,6 +6107,7 @@ pokedex = [
   {
     "dexNumber": 666,
     "filename": "666_15",
+    "icon": "666SavMS6",
     "name": "Vivillon (Savanna Pattern)",
     "type": [
       "Bug",
@@ -6103,6 +6117,7 @@ pokedex = [
   {
     "dexNumber": 666,
     "filename": "666_16",
+    "icon": "666SunMS6",
     "name": "Vivillon (Sun Pattern)",
     "type": [
       "Bug",
@@ -6112,6 +6127,7 @@ pokedex = [
   {
     "dexNumber": 666,
     "filename": "666_17",
+    "icon": "666OceMS6",
     "name": "Vivillon (Ocean Pattern)",
     "type": [
       "Bug",
@@ -6121,6 +6137,7 @@ pokedex = [
   {
     "dexNumber": 666,
     "filename": "666_18",
+    "icon": "666JunMS6",
     "name": "Vivillon (Jungle Pattern)",
     "type": [
       "Bug",
@@ -6130,6 +6147,7 @@ pokedex = [
   {
     "dexNumber": 666,
     "filename": "666_19",
+    "icon": "666FanMS6",
     "name": "Vivillon (Fancy Pattern)",
     "type": [
       "Bug",
@@ -6139,6 +6157,7 @@ pokedex = [
   {
     "dexNumber": 666,
     "filename": "666_20",
+    "icon": "666PokMS6",
     "name": "Vivillon (Poké Ball Pattern)",
     "type": [
       "Bug",
