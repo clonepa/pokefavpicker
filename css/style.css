@@ -1,6 +1,4 @@
 .cell {
-  max-width: 97px;
-  max-height: 97px;
   min-width: 97px;
   min-height: 97px;
   width: 97px;
@@ -8,15 +6,13 @@
   border-spacing: 0px;
   border-style: solid;
   border-width: 1px;
-  padding-bottom: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-  padding-left: 0px
-}
-
-td {
   text-align: center;
   vertical-align: middle;
+}
+
+.tbPkmnGrid {
+  max-height:970px;
+  max-width: 2209px;
 }
 
 .trPkmnList:nth-child(even) {
@@ -24,7 +20,52 @@ td {
 }
 
 .containerDiv {
-	width: 100%;
+	width: 100vw;
+  height: 100vh;
+  position: relative;
 	overflow-x: auto;
+  overflow-y: auto;
 	white-space: nowrap;
+}
+
+.label {
+  min-width: 97px;
+  min-height: 97px;
+  width: 97px;
+  height: 97px;
+  background: #333333;
+  color: white;
+  position: sticky;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: center;
+}
+
+.label:nth-child(even){
+  background: #3D3D3D;
+}
+
+.label.light{
+  background: #3D3D3D;
+}
+
+.label.top {
+  top: 0;
+  z-index: 1;
+}
+
+.label.side {
+  left: 0;
+}
+
+.label.corner {
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.tdGenHeader {
+  font-style: italic; 
+  color: #bbbbbb;
+
 }

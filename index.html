@@ -56,7 +56,7 @@
 
 			iconImgTag = "<img src='./img/icons/" + iconFilename + "' />";
 
-            var spacerLeft = '<tr><td style="font-style: italic; color: #bbbbbb;" colspan="4"><div><hr style="float: left; width: 40%"/>';
+            var spacerLeft = '<tr class="trGenSpacer"><td class="tdGenHeader" colspan="4"><div><hr style="float: left; width: 40%"/>';
             var spacerRight = '<hr style="float: right; width: 40%"/></div></td></tr>';
 
             if (pokedex[i].dexNumber == 1)
@@ -129,301 +129,303 @@
 	    	var searchValue = $(this).val().toLowerCase();
 	    	$("#tbPkmnList .trPkmnList").filter(function() {
 	      		$(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1);
+                //todo: make gen headers hide themselves when empty
 	    	});
 	  	});
 
 	});
     </script>
-    <div class="containerDiv">
-    <table style="max-width: 2209px">
-    	<tr>
-    		<td class="label cell">Pick your<br/>favorites!</td>
-    		<td class="label cell">Normal</td>
-    		<td class="label cell">Fire</td>
-    		<td class="label cell">Grass</td>
-    		<td class="label cell">Water</td>
-    		<td class="label cell">Electric</td>
-    		<td class="label cell">Ice</td>
-    		<td class="label cell">Fighting</td>
-    		<td class="label cell">Poison</td>
-    		<td class="label cell">Ground</td>
-    		<td class="label cell">Flying</td>
-    		<td class="label cell">Psychic</td>
-    		<td class="label cell">Bug</td>
-    		<td class="label cell">Rock</td>
-    		<td class="label cell">Ghost</td>
-    		<td class="label cell">Dragon</td>
-    		<td class="label cell">Dark</td>
-    		<td class="label cell">Steel</td>
-    		<td class="label cell">Fairy</td>
-    		<td class="label cell">Starter</td>
-    		<td class="label cell">Mega/<br/>G-Max</td>
-    		<td class="label cell">Legend</td>
-    		<td class="label cell">Overall<br/>Favorite</td>
-    	</tr>
-    	<tr>
-    		<td class="label cell">Generation<br/>I</td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    	</tr>
-    	<tr>
-    		<td class="label cell">Generation<br/>II</td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    	</tr>
-    	<tr>
-    		<td class="label cell">Generation<br/>III</td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    	</tr>
-    	<tr>
-    		<td class="label cell">Generation<br/>IV</td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    	</tr>
-    	<tr>
-    		<td class="label cell">Generation<br/>V</td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    	</tr>
-    	<tr>
-    		<td class="label cell">Generation<br/>VI</td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    	</tr>
-    	<tr>
-    		<td class="label cell">Generation<br/>VII</td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    	</tr>
-    	<tr>
-    		<td class="label cell">Generation<br/>VIII</td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    		<td class="pickable cell"></td>
-    	</tr>
-        <tr>
-            <td class="label cell">Overall<br/>Favorite</td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-            <td class="pickable cell"></td>
-        </tr>
-    </table>
-</div>
 
-<div class="modal" tabindex="-1" id="pickerModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title">Pokemon Picker</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <input class="search" id="inputSearch" placeholder="Search..." />
-        <hr/>
-        <div id="divPkmnList" style="overflow-y: auto; height: 350px;">
-        	<table style="width: 98%;">
-        		<thead>
-        			<th style="width:60px; text-align: center;">
-        				#
-        			</th>
-        			<th>
-        			</th>
-        			<th>
-        				Name
-        			</th>
-        			<th>
-        				Type
-        			</th>
-        		</thead>
-        		<tbody id="tbPkmnList">
-        			
-        		</tbody>
-        	</table>
+    <div class="containerDiv">
+        <table class="tbPkmnGrid">
+        	<tr>
+        		<th class="label corner">Pick your<br/>favorites!</th>
+        		<th class="label top">Normal</th>
+        		<th class="label top">Fire</th>
+        		<th class="label top">Grass</th>
+        		<th class="label top">Water</th>
+        		<th class="label top">Electric</th>
+        		<th class="label top">Ice</th>
+        		<th class="label top">Fighting</th>
+        		<th class="label top">Poison</th>
+        		<th class="label top">Ground</th>
+        		<th class="label top">Flying</th>
+        		<th class="label top">Psychic</th>
+        		<th class="label top">Bug</th>
+        		<th class="label top">Rock</th>
+        		<th class="label top">Ghost</th>
+        		<th class="label top">Dragon</th>
+        		<th class="label top">Dark</th>
+        		<th class="label top">Steel</th>
+        		<th class="label top">Fairy</th>
+        		<th class="label top">Starter</th>
+        		<th class="label top">Mega/<br/>G-Max</th>
+        		<th class="label top">Legend</th>
+        		<th class="label top">Overall<br/>Favorite</td>
+        	</tr>
+        	<tr>
+        		<th class="label side light">Generation<br/>I</th>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        	</tr>
+        	<tr>
+        		<th class="label side">Generation<br/>II</th>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        	</tr>
+        	<tr>
+        		<th class="label side light">Generation<br/>III</th>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        	</tr>
+        	<tr>
+        		<th class="label side">Generation<br/>IV</th>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        	</tr>
+        	<tr>
+        		<th class="label side light">Generation<br/>V</th>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        	</tr>
+        	<tr>
+        		<th class="label side">Generation<br/>VI</th>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        	</tr>
+        	<tr>
+        		<th class="label side light">Generation<br/>VII</th>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        	</tr>
+        	<tr>
+        		<th class="label side">Generation<br/>VIII</th>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        		<td class="pickable cell"></td>
+        	</tr>
+            <tr>
+                <th class="label side light">Overall<br/>Favorite</th>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+                <td class="pickable cell"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="modal" tabindex="-1" id="pickerModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Pokemon Picker</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <input class="search" id="inputSearch" placeholder="Search..." />
+            <hr/>
+            <div id="divPkmnList" style="overflow-y: auto; height: 500px;">
+            	<table style="width: 98%;">
+            		<thead>
+            			<th style="width:60px; text-align: center;">
+            				#
+            			</th>
+            			<th>
+            			</th>
+            			<th>
+            				Name
+            			</th>
+            			<th>
+            				Type
+            			</th>
+            		</thead>
+            		<tbody id="tbPkmnList">
+            			
+            		</tbody>
+            	</table>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
 </body>
 </html>

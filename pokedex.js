@@ -4719,7 +4719,17 @@ pokedex = [
   },
   {
     "dexNumber": 487,
-    "name": "Giratina",
+    "name": "Giratina (Altered Forme)",
+    "type": [
+      "Ghost",
+      "Dragon"
+    ]
+  },
+  {
+    "dexNumber": 487,
+    "name": "Giratina (Origin Forme)",
+    "filename": "487-o",
+    "icon": "487o",
     "type": [
       "Ghost",
       "Dragon"
@@ -4755,9 +4765,19 @@ pokedex = [
   },
   {
     "dexNumber": 492,
-    "name": "Shaymin",
+    "name": "Shaymin (Land Forme)",
     "type": [
       "Grass"
+    ]
+  },
+  {
+    "dexNumber": 492,
+    "name": "Shaymin (Sky Forme)",
+    "filename": "492-s",
+    "icon": "492s",
+    "type": [
+      "Grass",
+      "Flying"
     ]
   },
   {
@@ -5192,7 +5212,16 @@ pokedex = [
   },
   {
     "dexNumber": 550,
-    "name": "Basculin",
+    "name": "Basculin (Red-Striped)",
+    "type": [
+      "Water"
+    ]
+  },
+  {
+    "dexNumber": 550,
+    "filename": "550-b",
+    "icon": "550b",
+    "name": "Basculin (Blue-Striped)",
     "type": [
       "Water"
     ]
@@ -5233,6 +5262,16 @@ pokedex = [
     "name": "Darmanitan",
     "type": [
       "Fire"
+    ]
+  },
+  {
+    "dexNumber": 555,
+    "name": "Darmanitan (Zen Mode)",
+    "filename": "555-d",
+    "icon": "555d",
+    "type": [
+      "Fire",
+      "Psychic"
     ]
   },
   {
@@ -7075,7 +7114,17 @@ pokedex = [
   },
   {
     "dexNumber": 746,
+    "filename": "746_1",
     "name": "Wishiwashi",
+    "type": [
+      "Water"
+    ]
+  },
+  {
+    "dexNumber": 746,
+    "filename": "746_2",
+    "icon": "746-s",
+    "name": "Wishiwashi (School Form)",
     "type": [
       "Water"
     ]
@@ -7611,7 +7660,16 @@ pokedex = [
   },
   {
     "dexNumber": 802,
-    "name": "Marshadow",
+    "name": "Gloomdweller Marshadow",
+    "filename": "802_1",
+    "type": [
+      "Fighting",
+      "Ghost"
+    ]
+  },
+  {
+    "dexNumber": 802,
+    "name": "Zenith Marshadow",
     "filename": "802_2",
     "type": [
       "Fighting",
@@ -7731,6 +7789,7 @@ pokedex = [
   },
   {
     "dexNumber": 815,
+    "filename": "815_1",
     "name": "Cinderace",
     "type": [
       "Fire"
@@ -7763,6 +7822,7 @@ pokedex = [
   },
   {
     "dexNumber": 818,
+    "filename": "818_1",
     "name": "Inteleon",
     "type": [
       "Water"
