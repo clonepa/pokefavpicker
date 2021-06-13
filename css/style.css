@@ -12,7 +12,70 @@
 }
 
 .cell.normal {
-  background: #FFFFFF;
+  background: #d0c6b2;
+}
+.cell.fire {
+  background: #f77b63;
+}
+.cell.grass {
+  background: #8dce6c;
+}
+.cell.water {
+  background: #70b8ff;
+}
+.cell.electric {
+  background: #ffdb7c;
+}
+.cell.ice {
+  background: #a4dbe7;
+}
+.cell.fighting {
+  background: #c58b79;
+}
+.cell.poison {
+  background: #b582ac;
+}
+.cell.ground {
+  background: #cccc99;
+}
+.cell.flying {
+  background: #bcc7f7;
+}
+.cell.psychic {
+  background: #ffa4c5;
+}
+.cell.bug {
+  background: #b7bd87;
+}
+.cell.rock {
+  background: #bdae7e;
+}
+.cell.ghost {
+  background: #9090b5;
+}
+.cell.dragon {
+  background: #bbafef;
+}
+.cell.dark {
+  background: #aa968a;
+}
+.cell.steel {
+  background: #adadc6;
+}
+.cell.fairy {
+  background: #f7d5f7;
+}
+.cell.starter {
+  background: #e1e1e1;
+}
+.cell.mega {
+  background: #e1e1e1;
+}
+.cell.legend {
+  background: #e1e1e1;
+}
+.cell.favorite {
+  background: #e1e1e1;
 }
 
 .tbPkmnGrid {

@@ -31,6 +31,7 @@
 
         var columnList = ["normal",
                           "fire",
+                          "grass",
                           "water",
                           "electric",
                           "ice",
@@ -57,7 +58,7 @@
 			iconImgTag = '';
             typeText = ';';
             pokedex[i].id = i;
-            
+
 			for (var t in pokedex[i].type){
 				typeFilename = pokedex[i].type[t].toLowerCase() + ".gif";
 				typeImgTag += '<img src="./img/type/' + typeFilename + '" />';
@@ -135,10 +136,15 @@
 		});
 
 		$('.pickable').each(function(i, obj) {
-            //todo: add color classes
     		$( obj ).attr("id", i);
-    		$( obj ).attr("data-bs-toggle", "modal");
+    		
+            $( obj ).attr("data-bs-toggle", "modal");
     		$( obj ).attr("data-bs-target", "#pickerModal"); 
+
+            $( obj ).attr("data-row", parseInt(i / 22));
+            $( obj ).attr("data-column", parseInt(i % 22));
+
+            $( obj ).addClass(columnList[parseInt(i % 22)]);
 		});
 
 		$('.trPkmnList').click(function() {
@@ -153,7 +159,9 @@
 	    	var searchValue = $(this).val().toLowerCase();
 	    	$("#tbPkmnList .trPkmnList").filter(function() {
 	      		$(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1);
-                //todo: make gen headers hide themselves when empty
+                $( ".trGenSpacer" ).each(function(i) {
+
+                });
 	    	});
 	  	});
 
