@@ -6278,7 +6278,17 @@ pokedex = [
   },
   {
     "dexNumber": 641,
-    "name": "Tornadus",
+    "name": "Tornadus (Incarnate Forme)",
+    "legend": true,
+    "type": [
+      "Flying"
+    ]
+  },
+  {
+    "dexNumber": 641,
+    "name": "Tornadus (Therian Forme)",
+    "filename": "641-s",
+    "icon": "641-s",
     "legend": true,
     "type": [
       "Flying"
@@ -6286,7 +6296,18 @@ pokedex = [
   },
   {
     "dexNumber": 642,
-    "name": "Thundurus",
+    "name": "Thundurus (Incarnate Forme)",
+    "legend": true,
+    "type": [
+      "Electric",
+      "Flying"
+    ]
+  },
+  {
+    "dexNumber": 642,
+    "name": "Thundurus (Therian Forme)",
+    "filename": "642-s",
+    "icon": "642-s",
     "legend": true,
     "type": [
       "Electric",
@@ -6313,7 +6334,18 @@ pokedex = [
   },
   {
     "dexNumber": 645,
-    "name": "Landorus",
+    "name": "Landorus (Incarnate Forme)",
+    "legend": true,
+    "type": [
+      "Ground",
+      "Flying"
+    ]
+  },
+  {
+    "dexNumber": 645,
+    "name": "Landorus (Therian Forme)",
+    "filename": "645-s",
+    "icon": "645-s",
     "legend": true,
     "type": [
       "Ground",
@@ -6323,6 +6355,28 @@ pokedex = [
   {
     "dexNumber": 646,
     "name": "Kyurem",
+    "legend": true,
+    "type": [
+      "Dragon",
+      "Ice"
+    ]
+  },
+  {
+    "dexNumber": 646,
+    "name": "White Kyurem",
+    "filename": "646-w",
+    "icon": "646-w",
+    "legend": true,
+    "type": [
+      "Dragon",
+      "Ice"
+    ]
+  },
+  {
+    "dexNumber": 646,
+    "name": "Black Kyurem",
+    "filename": "646-b",
+    "icon": "646-b",
     "legend": true,
     "type": [
       "Dragon",
@@ -7455,9 +7509,40 @@ pokedex = [
   },
   {
     "dexNumber": 741,
-    "name": "Oricorio",
+    "name": "Oricorio (Baile Style)",
+    "filename": "741_1",
     "type": [
       "Fire",
+      "Flying"
+    ]
+  },
+  {
+    "dexNumber": 741,
+    "name": "Oricorio (Pom-Pom Style)",
+    "filename": "741_2",
+    "icon": "741-p",
+    "type": [
+      "Electric",
+      "Flying"
+    ]
+  },
+  {
+    "dexNumber": 741,
+    "name": "Oricorio (Pa'u Style)",
+    "filename": "741_3",
+    "icon": "741-pau",
+    "type": [
+      "Psychic",
+      "Flying"
+    ]
+  },
+  {
+    "dexNumber": 741,
+    "name": "Oricorio (Sensu Style)",
+    "filename": "741_4",
+    "icon": "741-s",
+    "type": [
+      "Ghost",
       "Flying"
     ]
   },
