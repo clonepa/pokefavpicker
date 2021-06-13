@@ -216,7 +216,7 @@
         function loadStateFromArray(){
             var newHTML;
             for(var i in gridStateObj){
-                if (gridStateObj[i] != -1) {
+                if (gridStateObj[i] != -1 && pokedex[gridStateObj[i]] != null) {
                     newHTML = "<img src='./img/sprites/" + pokedex[gridStateObj[i]].realfilename + "' title='" +  pokedex[gridStateObj[i]].name  + "' />";
                 }
                 else newHTML = "";
