@@ -913,10 +913,33 @@ pokedex = [
     ]
   },
   {
+    "dexNumber": 77,
+    "name": "Galarian Ponyta",
+    "filename": "077_2",
+    "icon": "077_2",
+    "regional": true,
+    "gen": 8, 
+    "type": [
+      "Psychic"
+    ]
+  },
+  {
     "dexNumber": 78,
     "name": "Rapidash",
     "type": [
       "Fire"
+    ]
+  },
+  {
+    "dexNumber": 78,
+    "name": "Galarian Rapidash",
+    "filename": "078_2",
+    "icon": "078_2",
+    "regional": true,
+    "gen": 8, 
+    "type": [
+      "Psychic",
+      "Fairy"
     ]
   },
   {
@@ -928,10 +951,33 @@ pokedex = [
     ]
   },
   {
+    "dexNumber": 79,
+    "name": "Galarian Slowpoke",
+    "filename": "079_2",
+    "icon": "079_2",
+    "regional": true,
+    "gen": 8, 
+    "type": [
+      "Psychic"
+    ]
+  },
+  {
     "dexNumber": 80,
     "name": "Slowbro",
     "type": [
       "Water",
+      "Psychic"
+    ]
+  },
+  {
+    "dexNumber": 80,
+    "name": "Galarian Slowbro",
+    "filename": "080_3",
+    "icon": "080_3",
+    "regional": true,
+    "gen": 8, 
+    "type": [
+      "Poison",
       "Psychic"
     ]
   },
@@ -969,6 +1015,17 @@ pokedex = [
     "type": [
       "Normal",
       "Flying"
+    ]
+  },
+  {
+    "dexNumber": 83,
+    "name": "Galarian Farfetch'd",
+    "filename": "083_2",
+    "icon": "083_2",
+    "regional": true,
+    "gen": 8, 
+    "type": [
+      "Fighting"
     ]
   },
   {
@@ -1254,6 +1311,18 @@ pokedex = [
     ]
   },
   {
+    "dexNumber": 110,
+    "name": "Galarian Weezing",
+    "filename": "110_2",
+    "icon": "110_2",
+    "regional": true,
+    "gen": 8, 
+    "type": [
+      "Poison",
+      "Fairy"
+    ]
+  },
+  {
     "dexNumber": 111,
     "name": "Rhyhorn",
     "type": [
@@ -1350,6 +1419,18 @@ pokedex = [
     "type": [
       "Psychic",
       "Fairy"
+    ]
+  },
+  {
+    "dexNumber": 122,
+    "name": "Galarian Mr. Mime",
+    "filename": "122_2",
+    "icon": "122_2",
+    "regional": true,
+    "gen": 8, 
+    "type": [
+      "Ice",
+      "Psychic"
     ]
   },
   {
@@ -1587,6 +1668,18 @@ pokedex = [
     ]
   },
   {
+    "dexNumber": 144,
+    "name": "Galarian Articuno",
+    "filename": "144_2",
+    "icon": "144_2",
+    "regional": true,
+    "gen": 8, 
+    "type": [
+      "Psychic",
+      "Flying"
+    ]
+  },
+  {
     "dexNumber": 145,
     "name": "Zapdos",
     "type": [
@@ -1595,10 +1688,34 @@ pokedex = [
     ]
   },
   {
+    "dexNumber": 145,
+    "name": "Galarian Zapdos",
+    "filename": "145_2",
+    "icon": "145_2",
+    "regional": true,
+    "gen": 8, 
+    "type": [
+      "Fighting",
+      "Flying"
+    ]
+  },
+  {
     "dexNumber": 146,
     "name": "Moltres",
     "type": [
       "Fire",
+      "Flying"
+    ]
+  },
+  {
+    "dexNumber": 146,
+    "name": "Galarian Moltres",
+    "filename": "146_2",
+    "icon": "146_2",
+    "regional": true,
+    "gen": 8, 
+    "type": [
+      "Dark",
       "Flying"
     ]
   },
@@ -2033,6 +2150,18 @@ pokedex = [
     ]
   },
   {
+    "dexNumber": 199,
+    "name": "Galarian Slowking",
+    "filename": "199_2",
+    "icon": "199_2",
+    "regional": true,
+    "gen": 8, 
+    "type": [
+      "Poison",
+      "Psychic"
+    ]
+  },
+  {
     "dexNumber": 200,
     "name": "Misdreavus",
     "type": [
@@ -2240,6 +2369,17 @@ pokedex = [
     "type": [
       "Water",
       "Rock"
+    ]
+  },
+  {
+    "dexNumber": 222,
+    "name": "Galarian Corsola",
+    "filename": "222_2",
+    "icon": "222_2",
+    "regional": true,
+    "gen": 8, 
+    "type": [
+      "Ghost"
     ]
   },
   {
@@ -2607,9 +2747,33 @@ pokedex = [
     ]
   },
   {
+    "dexNumber": 263,
+    "name": "Galarian Zigzagoon",
+    "filename": "263_2",
+    "icon": "263_2",
+    "regional": true,
+    "gen": 8, 
+    "type": [
+      "Dark",
+      "Normal"
+    ]
+  },
+  {
     "dexNumber": 264,
     "name": "Linoone",
     "type": [
+      "Normal"
+    ]
+  },
+  {
+    "dexNumber": 264,
+    "name": "Galarian Linoone",
+    "filename": "264_2",
+    "icon": "264_2",
+    "regional": true,
+    "gen": 8, 
+    "type": [
+      "Dark",
       "Normal"
     ]
   },
@@ -5258,6 +5422,17 @@ pokedex = [
     ]
   },
   {
+    "dexNumber": 554,
+    "name": "Galarian Darumaka",
+    "filename": "554_2",
+    "icon": "554_2",
+    "regional": true,
+    "gen": 8, 
+    "type": [
+      "Ice"
+    ]
+  },
+  {
     "dexNumber": 555,
     "name": "Darmanitan",
     "type": [
@@ -5271,6 +5446,29 @@ pokedex = [
     "icon": "555d",
     "type": [
       "Fire",
+      "Psychic"
+    ]
+  },
+  {
+    "dexNumber": 555,
+    "name": "Galarian Darmanitan",
+    "filename": "555_3",
+    "icon": "555_2",
+    "regional": true,
+    "gen": 8, 
+    "type": [
+      "Ice"
+    ]
+  },
+  {
+    "dexNumber": 555,
+    "name": "Galarian Darmanitan (Zen Mode)",
+    "filename": "555_4",
+    "icon": "555_3",
+    "regional": true,
+    "gen": 8, 
+    "type": [
+      "Ice",
       "Psychic"
     ]
   },
@@ -5325,6 +5523,18 @@ pokedex = [
     "dexNumber": 562,
     "name": "Yamask",
     "type": [
+      "Ghost"
+    ]
+  },
+  {
+    "dexNumber": 562,
+    "name": "Galarian Yamask",
+    "filename": "562_2",
+    "icon": "562_2",
+    "regional": true,
+    "gen": 8, 
+    "type": [
+      "Ground",
       "Ghost"
     ]
   },
@@ -5751,6 +5961,18 @@ pokedex = [
     "type": [
       "Ground",
       "Electric"
+    ]
+  },
+  {
+    "dexNumber": 618,
+    "name": "Galarian Stunfisk",
+    "filename": "618_2",
+    "icon": "618_2",
+    "regional": true,
+    "gen": 8, 
+    "type": [
+      "Ground",
+      "Steel"
     ]
   },
   {

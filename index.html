@@ -29,12 +29,35 @@
 		var iconFilename ="";
 		var pickerModal = document.getElementById('pickerModal');
 
+        var columnList = ["normal",
+                          "fire",
+                          "water",
+                          "electric",
+                          "ice",
+                          "fighting",
+                          "poison",
+                          "ground",
+                          "flying",
+                          "psychic",
+                          "bug",
+                          "rock",
+                          "ghost",
+                          "dragon",
+                          "dark",
+                          "steel",
+                          "fairy",
+                          "starter",
+                          "mega",
+                          "legend",
+                          "favorite"]
+
 		for (var i in pokedex){
 			appendString = '';
 			typeImgTag = '';
 			iconImgTag = '';
             typeText = ';';
-
+            pokedex[i].id = i;
+            
 			for (var t in pokedex[i].type){
 				typeFilename = pokedex[i].type[t].toLowerCase() + ".gif";
 				typeImgTag += '<img src="./img/type/' + typeFilename + '" />';
@@ -112,7 +135,7 @@
 		});
 
 		$('.pickable').each(function(i, obj) {
-
+            //todo: add color classes
     		$( obj ).attr("id", i);
     		$( obj ).attr("data-bs-toggle", "modal");
     		$( obj ).attr("data-bs-target", "#pickerModal"); 
