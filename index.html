@@ -19,6 +19,7 @@
     <script>
 
 	$( document ).ready(function() {
+
 		var filename = ""
 		var appendString = "";
 		var typeString = "";
@@ -28,8 +29,12 @@
 		var idCurrentSquare = "";
 		var iconString = "";
         var tagText = "";
-		var iconFilename ="";
+		var iconFilename = "";
 		var nextGenSpacer;
+
+        var gridStateObj = [];
+        var gridStateString = "";
+
         var pickerModal = document.getElementById('pickerModal');
 
         var columnList = ["normal",
@@ -103,6 +108,8 @@
 			else
 				filename = String(pokedex[i].dexNumber).padStart(3, '0') + ".png";
 
+            pokedex[i].realfilename = filename;
+
 			iconFilename = "";
 			if (pokedex[i].icon != null)
 				iconFilename = pokedex[i].icon + ".png";
@@ -133,6 +140,7 @@
 
 			appendString += '<tr class="trPkmnList"'; 
 			appendString += 	'data-pkmn-name="' + pokedex[i].name + '" ';
+            appendString +=     'data-pkmn-id="' + pokedex[i].id + '" ';
 			appendString += 	'data-pkmn-dex="' + pokedex[i].dexNumber + '" ';
 			appendString += 	'data-pkmn-filename="' + filename + '" ';
             appendString +=     'data-pkmn-gens="' + pokedex[i].generations + '" ';
@@ -142,7 +150,7 @@
 			appendString += 		'<i>' + String(pokedex[i].dexNumber).padStart(3,'0') + '</i>';
 			appendString += 	'</td>';	
 			appendString +=		'<td>';
-			appendString +=     iconImgTag;
+			appendString +=         iconImgTag;
 			appendString +=		'</td>';
 			appendString +=		'<td style="text-align: left;">';
 			appendString += 		pokedex[i].name ;
@@ -157,7 +165,7 @@
 
         $('.pickable').each(function(i, obj) {
             $( obj ).attr("id", i);
-            
+            $( obj ).attr("data-selected-id", -1);
             $( obj ).attr("data-bs-toggle", "modal");
             $( obj ).attr("data-bs-target", "#pickerModal"); 
 
@@ -167,30 +175,78 @@
             $( obj ).addClass(columnList[parseInt(i % 22)]);
         });
 
-		pickerModal.addEventListener('show.bs.modal', function (event) {
+        var params = new URLSearchParams(window.location.search);
+        if (params.has('q')){
+            gridStateObj = arrayFromString(params.get('q'));
+            loadStateFromArray();
+        };
 
+        //Functions
+        function arrayFromString(instring){
+            var decoded = instring; 
+            var outarray = [];
+            var entries = decoded.split(',');
+            var parsed = 0;
+            for( var i in entries){
+                parsed = parseInt(entries[i]);
+                if (isNaN(parsed)) outarray[i] = -1;
+                else outarray[i] = parsed;
+            }
+            return outarray;
+        };
+        
+        function arrayToString(){
+            var outstring = '';
+            for (var i in gridStateObj){
+                if (gridStateObj[i] != -1)
+                    outstring += gridStateObj[i];
+                if( i < gridStateObj.length - 1)
+                    outstring += ',';
+            }  
+            return outstring;
+        };
+
+        function updateGridStateObj(){
+            $('.pickable').each(function(i, obj) {
+                gridStateObj[parseInt($( obj ).attr("id"))] = parseInt($( obj ).attr("data-selected-id"));
+            });
+            window.history.replaceState(null, null, '?q=' + arrayToString()); 
+        };
+
+        function loadStateFromArray(){
+            var newHTML;
+            for(var i in gridStateObj){
+                if (gridStateObj[i] != -1) {
+                    newHTML = "<img src='./img/sprites/" + pokedex[gridStateObj[i]].realfilename + "' title='" +  pokedex[gridStateObj[i]].name  + "' />";
+                }
+                else newHTML = "";
+
+                $('#' + i).attr("data-selected-id", gridStateObj[i]);
+                $('#' + i).html(newHTML);
+            }
+        }
+
+        //Event Listeners
+
+		pickerModal.addEventListener('show.bs.modal', function (event) {
             idCurrentSquare = $( event.relatedTarget ).attr("id");
 			$("#inputSearch").val('');
-			
 			$( ".trGenSpacer" ).each(function() {$(this).show();});
-
 		});
 
         
 		pickerModal.addEventListener('shown.bs.modal', function (event) {
-
 			$("#inputSearch").focus();
             $("#inputSearch").trigger('keyup');
 		});
 
-		
-
 		$('.trPkmnList').click(function() {
-
 			var newHTML = "<img src='./img/sprites/" + $( this ).attr('data-pkmn-filename') + "' title='" +  $( this ).attr('data-pkmn-name')  + "' />";
 			$( "#" + idCurrentSquare ).html(newHTML);
+            $( "#" + idCurrentSquare ).attr("data-selected-id", $( this ).attr('data-pkmn-id'));
 			var modalInstance = bootstrap.Modal.getInstance(pickerModal);
 			modalInstance.hide();
+            updateGridStateObj();
 		});
 
         var curGenIndex;
@@ -204,6 +260,8 @@
 
 	    	searchValue = $(this).val().toLowerCase();
 	    	
+            $( ".trGenSpacer" ).each(function() {$(this).show();});
+
             if (curGenIndex != "9" && curTypeIndex != "21"){
                $("#tbPkmnList .trPkmnList").filter(function() {
                     $(this).toggle(
@@ -236,13 +294,15 @@
             };
 
             $( ".trGenSpacer" ).each(function(i) {
-
                 nextGenSpacer = $(this).nextAll("tr:visible").first();
                 if(nextGenSpacer.hasClass('trPkmnList'))
                     $(this).show();
                 else
                     $(this).hide(); 
             });
+
+            $("#tbPkmnList .trPkmnList:visible").odd().removeClass("dark");
+            $("#tbPkmnList .trPkmnList:visible").even().addClass("dark");
         });
 	});
     </script>

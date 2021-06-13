@@ -5779,7 +5779,37 @@ pokedex = [
   },
   {
     "dexNumber": 585,
-    "name": "Deerling",
+    "name": "Deerling (Spring Form)",
+    "type": [
+      "Normal",
+      "Grass"
+    ]
+  },
+  {
+    "dexNumber": 585,
+    "name": "Deerling (Summer Form)",
+    "filename": "585-s",
+    "icon": "585-s",
+    "type": [
+      "Normal",
+      "Grass"
+    ]
+  },
+  {
+    "dexNumber": 585,
+    "name": "Deerling (Autumn Form)",
+    "filename": "585-a",
+    "icon": "585-a",
+    "type": [
+      "Normal",
+      "Grass"
+    ]
+  },
+  {
+    "dexNumber": 585,
+    "name": "Deerling (Winter Form)",
+    "filename": "585-w",
+    "icon": "585-w",
     "type": [
       "Normal",
       "Grass"
@@ -5787,7 +5817,37 @@ pokedex = [
   },
   {
     "dexNumber": 586,
-    "name": "Sawsbuck",
+    "name": "Sawsbuck (Spring Form)",
+    "type": [
+      "Normal",
+      "Grass"
+    ]
+  },
+  {
+    "dexNumber": 586,
+    "name": "Sawsbuck (Summer Form)",
+    "filename": "586-s",
+    "icon": "586-s",
+    "type": [
+      "Normal",
+      "Grass"
+    ]
+  },
+  {
+    "dexNumber": 586,
+    "name": "Sawsbuck (Autumn Form)",
+    "filename": "586-a",
+    "icon": "586-a",
+    "type": [
+      "Normal",
+      "Grass"
+    ]
+  },
+  {
+    "dexNumber": 586,
+    "name": "Sawsbuck (Winter Form)",
+    "filename": "586-w",
+    "icon": "586-w",
     "type": [
       "Normal",
       "Grass"
@@ -7176,6 +7236,7 @@ pokedex = [
     "dexNumber": 718,
     "filename": "718_2",
     "name": "Zygarde (10% Forme)",
+    "gen": 7,
     "legend": true,
     "type": [
       "Dragon",
@@ -7186,6 +7247,7 @@ pokedex = [
     "dexNumber": 718,
     "filename": "718_3",
     "name": "Zygarde (Complete Forme)",
+    "gen": 7,
     "legend": true,
     "type": [
       "Dragon",
