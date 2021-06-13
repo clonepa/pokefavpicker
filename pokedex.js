@@ -2,6 +2,7 @@ pokedex = [
   {
     "dexNumber": 1,
     "name": "Bulbasaur",
+    "starter": true,
     "type": [
       "Grass",
       "Poison"
@@ -50,6 +51,7 @@ pokedex = [
   {
     "dexNumber": 4,
     "name": "Charmander",
+    "starter": true,
     "type": [
       "Fire"
     ]
@@ -109,6 +111,7 @@ pokedex = [
   {
     "dexNumber": 7,
     "name": "Squirtle",
+    "starter": true,
     "type": [
       "Water"
     ]
@@ -326,6 +329,7 @@ pokedex = [
   {
     "dexNumber": 25,
     "name": "Pikachu",
+    "starter": true,
     "type": [
       "Electric"
     ]
@@ -1546,6 +1550,7 @@ pokedex = [
   {
     "dexNumber": 133,
     "name": "Eevee",
+    "starter": true,
     "type": [
       "Normal"
     ]
@@ -1662,6 +1667,7 @@ pokedex = [
   {
     "dexNumber": 144,
     "name": "Articuno",
+    "legend": true,
     "type": [
       "Ice",
       "Flying"
@@ -1670,6 +1676,7 @@ pokedex = [
   {
     "dexNumber": 144,
     "name": "Galarian Articuno",
+    "legend": true,
     "filename": "144_2",
     "icon": "144_2",
     "regional": true,
@@ -1682,6 +1689,7 @@ pokedex = [
   {
     "dexNumber": 145,
     "name": "Zapdos",
+    "legend": true,
     "type": [
       "Electric",
       "Flying"
@@ -1690,6 +1698,7 @@ pokedex = [
   {
     "dexNumber": 145,
     "name": "Galarian Zapdos",
+    "legend": true,
     "filename": "145_2",
     "icon": "145_2",
     "regional": true,
@@ -1702,6 +1711,7 @@ pokedex = [
   {
     "dexNumber": 146,
     "name": "Moltres",
+    "legend": true,
     "type": [
       "Fire",
       "Flying"
@@ -1710,6 +1720,7 @@ pokedex = [
   {
     "dexNumber": 146,
     "name": "Galarian Moltres",
+    "legend": true,
     "filename": "146_2",
     "icon": "146_2",
     "regional": true,
@@ -1744,6 +1755,7 @@ pokedex = [
   {
     "dexNumber": 150,
     "name": "Mewtwo",
+    "legend": true,
     "type": [
       "Psychic"
     ]
@@ -1751,6 +1763,7 @@ pokedex = [
   {
     "dexNumber": 150,
     "name": "Mega Mewtwo X",
+    "legend": true,
     "icon": "150-mx",
     "transform": true,
     "filename": "transform/150_2",
@@ -1763,6 +1776,7 @@ pokedex = [
   {
     "dexNumber": 150,
     "name": "Mega Mewtwo Y",
+    "legend": true,
     "icon": "150-my",
     "transform": true,
     "filename": "transform/150_3",
@@ -1773,6 +1787,7 @@ pokedex = [
   },
   {
     "dexNumber": 151,
+    "legend": true,
     "name": "Mew",
     "type": [
       "Psychic"
@@ -1781,6 +1796,7 @@ pokedex = [
   {
     "dexNumber": 152,
     "name": "Chikorita",
+    "starter": true,
     "type": [
       "Grass"
     ]
@@ -1802,6 +1818,7 @@ pokedex = [
   {
     "dexNumber": 155,
     "name": "Cyndaquil",
+    "starter": true,
     "type": [
       "Fire"
     ]
@@ -1823,6 +1840,7 @@ pokedex = [
   {
     "dexNumber": 158,
     "name": "Totodile",
+    "starter": true,
     "type": [
       "Water"
     ]
@@ -2544,6 +2562,7 @@ pokedex = [
   {
     "dexNumber": 243,
     "name": "Raikou",
+    "legend": true,
     "type": [
       "Electric"
     ]
@@ -2551,6 +2570,7 @@ pokedex = [
   {
     "dexNumber": 244,
     "name": "Entei",
+    "legend": true,
     "type": [
       "Fire"
     ]
@@ -2558,6 +2578,7 @@ pokedex = [
   {
     "dexNumber": 245,
     "name": "Suicune",
+    "legend": true,
     "type": [
       "Water"
     ]
@@ -2601,6 +2622,7 @@ pokedex = [
   {
     "dexNumber": 249,
     "name": "Lugia",
+    "legend": true,
     "type": [
       "Psychic",
       "Flying"
@@ -2609,6 +2631,7 @@ pokedex = [
   {
     "dexNumber": 250,
     "name": "Ho-Oh",
+    "legend": true,
     "type": [
       "Fire",
       "Flying"
@@ -2617,6 +2640,7 @@ pokedex = [
   {
     "dexNumber": 251,
     "name": "Celebi",
+    "legend": true,
     "type": [
       "Psychic",
       "Grass"
@@ -2625,6 +2649,7 @@ pokedex = [
   {
     "dexNumber": 252,
     "name": "Treecko",
+    "starter": true,
     "type": [
       "Grass"
     ]
@@ -2658,6 +2683,7 @@ pokedex = [
   {
     "dexNumber": 255,
     "name": "Torchic",
+    "starter": true,
     "type": [
       "Fire"
     ]
@@ -2693,6 +2719,7 @@ pokedex = [
   {
     "dexNumber": 258,
     "name": "Mudkip",
+    "starter": true,
     "type": [
       "Water"
     ]
@@ -3812,6 +3839,7 @@ pokedex = [
   {
     "dexNumber": 377,
     "name": "Regirock",
+    "legend": true,
     "type": [
       "Rock"
     ]
@@ -3819,6 +3847,7 @@ pokedex = [
   {
     "dexNumber": 378,
     "name": "Regice",
+    "legend": true,
     "type": [
       "Ice"
     ]
@@ -3826,6 +3855,7 @@ pokedex = [
   {
     "dexNumber": 379,
     "name": "Registeel",
+    "legend": true,
     "type": [
       "Steel"
     ]
@@ -3833,6 +3863,7 @@ pokedex = [
   {
     "dexNumber": 380,
     "name": "Latias",
+    "legend": true,
     "type": [
       "Dragon",
       "Psychic"
@@ -3841,6 +3872,7 @@ pokedex = [
   {
     "dexNumber": 380,
     "name": "Mega Latias",
+    "legend": true,
     "icon": "380-m",
     "transform": true,
     "filename": "transform/380_2",
@@ -3853,6 +3885,7 @@ pokedex = [
   {
     "dexNumber": 381,
     "name": "Latios",
+    "legend": true,
     "type": [
       "Dragon",
       "Psychic"
@@ -3861,6 +3894,7 @@ pokedex = [
   {
     "dexNumber": 381,
     "name": "Mega Latios",
+    "legend": true,
     "icon": "381-m",
     "transform": true,
     "filename": "transform/381_2",
@@ -3873,6 +3907,7 @@ pokedex = [
   {
     "dexNumber": 382,
     "name": "Kyogre",
+    "legend": true,
     "type": [
       "Water"
     ]
@@ -3880,6 +3915,7 @@ pokedex = [
   {
     "dexNumber": 382,
     "name": "Primal Kyogre",
+    "legend": true,
     "transform": true,
     "icon": "382-p",
     "filename": "transform/382_2",
@@ -3891,6 +3927,7 @@ pokedex = [
   {
     "dexNumber": 383,
     "name": "Groudon",
+    "legend": true,
     "type": [
       "Ground"
     ]
@@ -3898,6 +3935,7 @@ pokedex = [
   {
     "dexNumber": 383,
     "name": "Primal Groudon",
+    "legend": true,
     "transform": true,
     "filename": "transform/383_2",
     "icon": "383-p",
@@ -3910,6 +3948,7 @@ pokedex = [
   {
     "dexNumber": 384,
     "name": "Rayquaza",
+    "legend": true,
     "type": [
       "Dragon",
       "Flying"
@@ -3918,6 +3957,7 @@ pokedex = [
   {
     "dexNumber": 384,
     "name": "Mega Rayquaza",
+    "legend": true,
     "icon": "384-m",
     "transform": true,
     "filename": "transform/384_2",
@@ -3930,6 +3970,7 @@ pokedex = [
   {
     "dexNumber": 385,
     "name": "Jirachi",
+    "legend": true,
     "type": [
       "Steel",
       "Psychic"
@@ -3938,6 +3979,7 @@ pokedex = [
   {
     "dexNumber": 386,
     "name": "Deoxys",
+    "legend": true,
     "type": [
       "Psychic"
     ]
@@ -3946,6 +3988,7 @@ pokedex = [
     "dexNumber": 386,
     "filename": "386-a",
     "name": "Deoxys (Attack Forme)",
+    "legend": true,
     "type": [
       "Psychic"
     ]
@@ -3954,6 +3997,7 @@ pokedex = [
     "dexNumber": 386,
     "filename": "386-d",
     "name": "Deoxys (Defense Forme)",
+    "legend": true,
     "type": [
       "Psychic"
     ]
@@ -3962,6 +4006,7 @@ pokedex = [
     "dexNumber": 386,
     "filename": "386-s",
     "name": "Deoxys (Speed Forme)",
+    "legend": true,
     "type": [
       "Psychic"
     ]
@@ -3969,6 +4014,7 @@ pokedex = [
   {
     "dexNumber": 387,
     "name": "Turtwig",
+    "starter": true,
     "type": [
       "Grass"
     ]
@@ -3991,6 +4037,7 @@ pokedex = [
   {
     "dexNumber": 390,
     "name": "Chimchar",
+    "starter": true,
     "type": [
       "Fire"
     ]
@@ -4014,6 +4061,7 @@ pokedex = [
   {
     "dexNumber": 393,
     "name": "Piplup",
+    "starter": true,
     "type": [
       "Water"
     ]
@@ -4832,6 +4880,7 @@ pokedex = [
   {
     "dexNumber": 480,
     "name": "Uxie",
+    "legend": true,
     "type": [
       "Psychic"
     ]
@@ -4839,6 +4888,7 @@ pokedex = [
   {
     "dexNumber": 481,
     "name": "Mesprit",
+    "legend": true,
     "type": [
       "Psychic"
     ]
@@ -4846,6 +4896,7 @@ pokedex = [
   {
     "dexNumber": 482,
     "name": "Azelf",
+    "legend": true,
     "type": [
       "Psychic"
     ]
@@ -4853,6 +4904,7 @@ pokedex = [
   {
     "dexNumber": 483,
     "name": "Dialga",
+    "legend": true,
     "type": [
       "Steel",
       "Dragon"
@@ -4861,6 +4913,7 @@ pokedex = [
   {
     "dexNumber": 484,
     "name": "Palkia",
+    "legend": true,
     "type": [
       "Water",
       "Dragon"
@@ -4869,6 +4922,7 @@ pokedex = [
   {
     "dexNumber": 485,
     "name": "Heatran",
+    "legend": true,
     "type": [
       "Fire",
       "Steel"
@@ -4877,6 +4931,7 @@ pokedex = [
   {
     "dexNumber": 486,
     "name": "Regigigas",
+    "legend": true,
     "type": [
       "Normal"
     ]
@@ -4884,6 +4939,7 @@ pokedex = [
   {
     "dexNumber": 487,
     "name": "Giratina (Altered Forme)",
+    "legend": true,
     "type": [
       "Ghost",
       "Dragon"
@@ -4892,6 +4948,7 @@ pokedex = [
   {
     "dexNumber": 487,
     "name": "Giratina (Origin Forme)",
+    "legend": true,
     "filename": "487-o",
     "icon": "487o",
     "type": [
@@ -4902,6 +4959,7 @@ pokedex = [
   {
     "dexNumber": 488,
     "name": "Cresselia",
+    "legend": true,
     "type": [
       "Psychic"
     ]
@@ -4909,6 +4967,7 @@ pokedex = [
   {
     "dexNumber": 489,
     "name": "Phione",
+    "legend": true,
     "type": [
       "Water"
     ]
@@ -4916,6 +4975,7 @@ pokedex = [
   {
     "dexNumber": 490,
     "name": "Manaphy",
+    "legend": true,
     "type": [
       "Water"
     ]
@@ -4923,6 +4983,7 @@ pokedex = [
   {
     "dexNumber": 491,
     "name": "Darkrai",
+    "legend": true,
     "type": [
       "Dark"
     ]
@@ -4930,6 +4991,7 @@ pokedex = [
   {
     "dexNumber": 492,
     "name": "Shaymin (Land Forme)",
+    "legend": true,
     "type": [
       "Grass"
     ]
@@ -4937,6 +4999,7 @@ pokedex = [
   {
     "dexNumber": 492,
     "name": "Shaymin (Sky Forme)",
+    "legend": true,
     "filename": "492-s",
     "icon": "492s",
     "type": [
@@ -4947,6 +5010,7 @@ pokedex = [
   {
     "dexNumber": 493,
     "name": "Arceus",
+    "legend": true,
     "type": [
       "Normal"
     ]
@@ -4954,6 +5018,7 @@ pokedex = [
   {
     "dexNumber": 494,
     "name": "Victini",
+    "legend": true,
     "type": [
       "Psychic",
       "Fire"
@@ -4962,6 +5027,7 @@ pokedex = [
   {
     "dexNumber": 495,
     "name": "Snivy",
+    "starter": true,
     "type": [
       "Grass"
     ]
@@ -4983,6 +5049,7 @@ pokedex = [
   {
     "dexNumber": 498,
     "name": "Tepig",
+    "starter": true,
     "type": [
       "Fire"
     ]
@@ -5006,6 +5073,7 @@ pokedex = [
   {
     "dexNumber": 501,
     "name": "Oshawott",
+    "starter": true,
     "type": [
       "Water"
     ]
@@ -6133,6 +6201,7 @@ pokedex = [
   {
     "dexNumber": 639,
     "name": "Terrakion",
+    "legend": true,
     "type": [
       "Rock",
       "Fighting"
@@ -6141,6 +6210,7 @@ pokedex = [
   {
     "dexNumber": 640,
     "name": "Virizion",
+    "legend": true,
     "type": [
       "Grass",
       "Fighting"
@@ -6149,6 +6219,7 @@ pokedex = [
   {
     "dexNumber": 641,
     "name": "Tornadus",
+    "legend": true,
     "type": [
       "Flying"
     ]
@@ -6156,6 +6227,7 @@ pokedex = [
   {
     "dexNumber": 642,
     "name": "Thundurus",
+    "legend": true,
     "type": [
       "Electric",
       "Flying"
@@ -6164,6 +6236,7 @@ pokedex = [
   {
     "dexNumber": 643,
     "name": "Reshiram",
+    "legend": true,
     "type": [
       "Dragon",
       "Fire"
@@ -6172,6 +6245,7 @@ pokedex = [
   {
     "dexNumber": 644,
     "name": "Zekrom",
+    "legend": true,
     "type": [
       "Dragon",
       "Electric"
@@ -6180,6 +6254,7 @@ pokedex = [
   {
     "dexNumber": 645,
     "name": "Landorus",
+    "legend": true,
     "type": [
       "Ground",
       "Flying"
@@ -6188,6 +6263,7 @@ pokedex = [
   {
     "dexNumber": 646,
     "name": "Kyurem",
+    "legend": true,
     "type": [
       "Dragon",
       "Ice"
@@ -6196,6 +6272,7 @@ pokedex = [
   {
     "dexNumber": 647,
     "name": "Keldeo",
+    "legend": true,
     "type": [
       "Water",
       "Fighting"
@@ -6204,6 +6281,7 @@ pokedex = [
   {
     "dexNumber": 648,
     "name": "Meloetta",
+    "legend": true,
     "type": [
       "Normal",
       "Psychic"
@@ -6212,6 +6290,7 @@ pokedex = [
   {
     "dexNumber": 649,
     "name": "Genesect",
+    "legend": true,
     "type": [
       "Bug",
       "Steel"
@@ -6220,6 +6299,7 @@ pokedex = [
   {
     "dexNumber": 650,
     "name": "Chespin",
+    "starter": true,
     "type": [
       "Grass"
     ]
@@ -6242,6 +6322,7 @@ pokedex = [
   {
     "dexNumber": 653,
     "name": "Fennekin",
+    "starter": true,
     "type": [
       "Fire"
     ]
@@ -6264,6 +6345,7 @@ pokedex = [
   {
     "dexNumber": 656,
     "name": "Froakie",
+    "starter": true,
     "type": [
       "Water"
     ]
@@ -7057,6 +7139,7 @@ pokedex = [
     "dexNumber": 716,
     "filename": "716_2",
     "name": "Xerneas (Neutral Mode)",
+    "legend": true,
     "type": [
       "Fairy"
     ]
@@ -7065,6 +7148,7 @@ pokedex = [
     "dexNumber": 716,
     "filename": "716_1",
     "name": "Xerneas (Active Mode)",
+    "legend": true,
     "type": [
       "Fairy"
     ]
@@ -7072,6 +7156,7 @@ pokedex = [
   {
     "dexNumber": 717,
     "name": "Yveltal",
+    "legend": true,
     "type": [
       "Dark",
       "Flying"
@@ -7080,7 +7165,8 @@ pokedex = [
   {
     "dexNumber": 718,
     "filename": "718_1",
-    "name": "Zygarde",
+    "name": "Zygarde (50% Forme)",
+    "legend": true,
     "type": [
       "Dragon",
       "Ground"
@@ -7090,6 +7176,7 @@ pokedex = [
     "dexNumber": 718,
     "filename": "718_2",
     "name": "Zygarde (10% Forme)",
+    "legend": true,
     "type": [
       "Dragon",
       "Ground"
@@ -7099,6 +7186,7 @@ pokedex = [
     "dexNumber": 718,
     "filename": "718_3",
     "name": "Zygarde (Complete Forme)",
+    "legend": true,
     "type": [
       "Dragon",
       "Ground"
@@ -7108,6 +7196,7 @@ pokedex = [
     "dexNumber": 719,
     "filename": "719_1",
     "name": "Diancie",
+    "legend": true,
     "type": [
       "Rock",
       "Fairy"
@@ -7116,6 +7205,7 @@ pokedex = [
   {
     "dexNumber": 719,
     "name": "Mega Diancie",
+    "legend": true,
     "icon": "719-m",
     "transform": true,
     "filename": "transform/719_2",
@@ -7128,6 +7218,7 @@ pokedex = [
   {
     "dexNumber": 720,
     "filename": "720_1",
+    "legend": true,
     "name": "Hoopa",
     "type": [
       "Psychic",
@@ -7138,6 +7229,7 @@ pokedex = [
     "dexNumber": 720,
     "filename": "720_2",
     "name": "Hoopa (Unbound)",
+    "legend": true,
     "type": [
       "Psychic",
       "Dark"
@@ -7146,6 +7238,7 @@ pokedex = [
   {
     "dexNumber": 721,
     "name": "Volcanion",
+    "legend": true,
     "type": [
       "Fire",
       "Water"
@@ -7154,6 +7247,7 @@ pokedex = [
   {
     "dexNumber": 722,
     "name": "Rowlet",
+    "starter": true,
     "type": [
       "Grass",
       "Flying"
@@ -7178,6 +7272,7 @@ pokedex = [
   {
     "dexNumber": 725,
     "name": "Litten",
+    "starter": true,
     "type": [
       "Fire"
     ]
@@ -7200,6 +7295,7 @@ pokedex = [
   {
     "dexNumber": 728,
     "name": "Popplio",
+    "starter": true,
     "type": [
       "Water"
     ]
@@ -7544,6 +7640,7 @@ pokedex = [
   {
     "dexNumber": 772,
     "name": "Type: Null",
+    "legend": true,
     "type": [
       "Normal"
     ]
@@ -7552,6 +7649,7 @@ pokedex = [
     "dexNumber": 773,
     "filename": "773_1",
     "name": "Silvally",
+    "legend": true,
     "type": [
       "Normal"
     ]
@@ -7717,6 +7815,7 @@ pokedex = [
   {
     "dexNumber": 785,
     "name": "Tapu Koko",
+    "legend": true,
     "type": [
       "Electric",
       "Fairy"
@@ -7725,6 +7824,7 @@ pokedex = [
   {
     "dexNumber": 786,
     "name": "Tapu Lele",
+    "legend": true,
     "type": [
       "Psychic",
       "Fairy"
@@ -7733,6 +7833,7 @@ pokedex = [
   {
     "dexNumber": 787,
     "name": "Tapu Bulu",
+    "legend": true,
     "type": [
       "Grass",
       "Fairy"
@@ -7741,6 +7842,7 @@ pokedex = [
   {
     "dexNumber": 788,
     "name": "Tapu Fini",
+    "legend": true,
     "type": [
       "Water",
       "Fairy"
@@ -7749,6 +7851,7 @@ pokedex = [
   {
     "dexNumber": 789,
     "name": "Cosmog",
+    "legend": true,
     "type": [
       "Psychic"
     ]
@@ -7756,6 +7859,7 @@ pokedex = [
   {
     "dexNumber": 790,
     "name": "Cosmoem",
+    "legend": true,
     "type": [
       "Psychic"
     ]
@@ -7764,6 +7868,7 @@ pokedex = [
     "dexNumber": 791,
     "filename": "791_1",
     "name": "Solgaleo",
+    "legend": true,
     "type": [
       "Psychic",
       "Steel"
@@ -7772,6 +7877,7 @@ pokedex = [
   {
     "dexNumber": 792,
     "name": "Lunala",
+    "legend": true,
     "type": [
       "Psychic",
       "Ghost"
@@ -7780,6 +7886,7 @@ pokedex = [
   {
     "dexNumber": 793,
     "name": "Nihilego",
+    "legend": true,
     "type": [
       "Rock",
       "Poison"
@@ -7788,6 +7895,7 @@ pokedex = [
   {
     "dexNumber": 794,
     "name": "Buzzwole",
+    "legend": true,
     "type": [
       "Bug",
       "Fighting"
@@ -7796,6 +7904,7 @@ pokedex = [
   {
     "dexNumber": 795,
     "name": "Pheromosa",
+    "legend": true,
     "type": [
       "Bug",
       "Fighting"
@@ -7804,6 +7913,7 @@ pokedex = [
   {
     "dexNumber": 796,
     "name": "Xurkitree",
+    "legend": true,
     "type": [
       "Electric"
     ]
@@ -7811,6 +7921,7 @@ pokedex = [
   {
     "dexNumber": 797,
     "name": "Celesteela",
+    "legend": true,
     "type": [
       "Steel",
       "Flying"
@@ -7819,6 +7930,7 @@ pokedex = [
   {
     "dexNumber": 798,
     "name": "Kartana",
+    "legend": true,
     "type": [
       "Grass",
       "Steel"
@@ -7827,6 +7939,7 @@ pokedex = [
   {
     "dexNumber": 799,
     "name": "Guzzlord",
+    "legend": true,
     "type": [
       "Dark",
       "Dragon"
@@ -7835,6 +7948,7 @@ pokedex = [
   {
     "dexNumber": 800,
     "name": "Necrozma",
+    "legend": true,
     "filename": "800_1",
     "type": [
       "Psychic"
@@ -7843,6 +7957,7 @@ pokedex = [
   {
     "dexNumber": 800,
     "name": "Dusk Mane Necrozma",
+    "legend": true,
     "transform": true,
     "icon": "800-dm",
     "filename": "800_2",
@@ -7854,6 +7969,7 @@ pokedex = [
   {
     "dexNumber": 800,
     "name": "Dawn Wings Necrozma",
+    "legend": true,
     "transform": true,
     "icon": "800-dw",
     "filename": "800_3",
@@ -7864,6 +7980,7 @@ pokedex = [
   {
     "dexNumber": 800,
     "name": "Ultra Necrozma",
+    "legend": true,
     "icon": "800-u",
     "filename": "800_4",
     "transform": true,
@@ -7874,6 +7991,7 @@ pokedex = [
   {
     "dexNumber": 801,
     "name": "Magearna",
+    "legend": true,
     "filename": "801_1",
     "type": [
       "Steel",
@@ -7883,6 +8001,7 @@ pokedex = [
   {
     "dexNumber": 802,
     "name": "Gloomdweller Marshadow",
+    "legend": true,
     "filename": "802_1",
     "type": [
       "Fighting",
@@ -7892,6 +8011,7 @@ pokedex = [
   {
     "dexNumber": 802,
     "name": "Zenith Marshadow",
+    "legend": true,
     "filename": "802_2",
     "type": [
       "Fighting",
@@ -7901,6 +8021,7 @@ pokedex = [
   {
     "dexNumber": 803,
     "name": "Poipole",
+    "legend": true,
     "type": [
       "Poison"
     ]
@@ -7908,6 +8029,7 @@ pokedex = [
   {
     "dexNumber": 804,
     "name": "Naganadel",
+    "legend": true,
     "type": [
       "Poison",
       "Dragon"
@@ -7916,6 +8038,7 @@ pokedex = [
   {
     "dexNumber": 805,
     "name": "Stakataka",
+    "legend": true,
     "type": [
       "Rock",
       "Steel"
@@ -7924,6 +8047,7 @@ pokedex = [
   {
     "dexNumber": 806,
     "name": "Blacephalon",
+    "legend": true,
     "type": [
       "Fire",
       "Ghost"
@@ -7932,6 +8056,7 @@ pokedex = [
   {
     "dexNumber": 807,
     "name": "Zeraora",
+    "legend": true,
     "type": [
       "Electric"
     ]
@@ -7939,6 +8064,7 @@ pokedex = [
   {
     "dexNumber": 808,
     "name": "Meltan",
+    "legend": true,
     "type": [
       "Steel"
     ]
@@ -7947,6 +8073,7 @@ pokedex = [
     "dexNumber": 809,
     "filename": "809_1",
     "name": "Melmetal",
+    "legend": true,
     "type": [
       "Steel"
     ]
@@ -7965,6 +8092,7 @@ pokedex = [
   {
     "dexNumber": 810,
     "name": "Grookey",
+    "starter": true,
     "type": [
       "Grass"
     ]
@@ -7998,6 +8126,7 @@ pokedex = [
   {
     "dexNumber": 813,
     "name": "Scorbunny",
+    "starter": true,
     "type": [
       "Fire"
     ]
@@ -8031,6 +8160,7 @@ pokedex = [
   {
     "dexNumber": 816,
     "name": "Sobble",
+    "starter": true,
     "type": [
       "Water"
     ]
@@ -8820,6 +8950,7 @@ pokedex = [
     "filename": "888_1",
     "icon": "888_1",
     "name": "Zacian (Crowned Sword)",
+    "legend": true,
     "type": [
       "Fairy"
     ]
@@ -8829,6 +8960,7 @@ pokedex = [
     "filename": "889_1",
     "icon": "889_1",
     "name": "Zamazenta (Crowned Shield)",
+    "legend": true,
     "type": [
       "Fighting"
     ]
@@ -8838,6 +8970,7 @@ pokedex = [
     "filename": "890_1",
     "icon": "890_1",
     "name": "Eternatus",
+    "legend": true,
     "type": [
       "Poison",
       "Dragon"

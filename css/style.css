@@ -15,13 +15,13 @@
   background: #d0c6b2;
 }
 .cell.fire {
-  background: #f77b63;
+  background: #f77f67;
 }
 .cell.grass {
   background: #8dce6c;
 }
 .cell.water {
-  background: #70b8ff;
+  background: #94c0eb;
 }
 .cell.electric {
   background: #ffdb7c;
@@ -45,7 +45,7 @@
   background: #ffa4c5;
 }
 .cell.bug {
-  background: #b7bd87;
+  background: #bec95c;
 }
 .cell.rock {
   background: #bdae7e;
@@ -133,6 +133,7 @@
 }
 
 .tdGenHeader {
+  text-align: center;
   font-style: italic; 
   color: #bbbbbb;
 
