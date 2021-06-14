@@ -31,7 +31,7 @@
         var tagText = "";
 		var iconFilename = "";
 		var nextGenSpacer;
-
+        var viableOnly = true;
         var gridStateObj = [];
         var gridStateString = "";
 
@@ -228,6 +228,11 @@
 
         //Event Listeners
 
+        $( "#cbViable[type=checkbox]" ).change(function(){
+            viableOnly = this.checked;
+            $("#inputSearch").trigger('keyup');
+        });
+
 		pickerModal.addEventListener('show.bs.modal', function (event) {
             idCurrentSquare = $( event.relatedTarget ).attr("id");
 			$("#inputSearch").val('');
@@ -236,7 +241,7 @@
 
         
 		pickerModal.addEventListener('shown.bs.modal', function (event) {
-			$("#inputSearch").focus();
+			//$("#inputSearch").focus();
             $("#inputSearch").trigger('keyup');
 		});
 
@@ -262,44 +267,51 @@
 	    	
             $( ".trGenSpacer" ).each(function() {$(this).show();});
 
-            if (curGenIndex != "9" && curTypeIndex != "21"){
-               $("#tbPkmnList .trPkmnList").filter(function() {
-                    $(this).toggle(
-                        ($(this).text().toLowerCase().indexOf(searchValue) > -1)
-                        && ( $(this).attr("data-pkmn-col-tags").toLowerCase().indexOf(columnList[curTypeIndex]) > -1)
-                        && ( $(this).attr("data-pkmn-gens").toLowerCase().indexOf(curGenIndex) > -1)
-                    );
-                }); 
-            }
-            else if (curGenIndex !="9" && curTypeIndex == "21" ){
-                $("#tbPkmnList .trPkmnList").filter(function() {
-                    $(this).toggle(
-                        ($(this).text().toLowerCase().indexOf(searchValue) > -1)
-                        && ( $(this).attr("data-pkmn-gens").toLowerCase().indexOf(curGenIndex) > -1)
-                    );
+            if (viableOnly){
+                if (curGenIndex != "9" && curTypeIndex != "21"){
+                   $("#tbPkmnList .trPkmnList").filter(function() {
+                        $(this).toggle(
+                            ($(this).text().toLowerCase().indexOf(searchValue) > -1)
+                            && ( $(this).attr("data-pkmn-col-tags").toLowerCase().indexOf(columnList[curTypeIndex]) > -1)
+                            && ( $(this).attr("data-pkmn-gens").toLowerCase().indexOf(curGenIndex) > -1)
+                        );
+                    }); 
+                }
+                else if (curGenIndex !="9" && curTypeIndex == "21" ){
+                    $("#tbPkmnList .trPkmnList").filter(function() {
+                        $(this).toggle(
+                            ($(this).text().toLowerCase().indexOf(searchValue) > -1)
+                            && ( $(this).attr("data-pkmn-gens").toLowerCase().indexOf(curGenIndex) > -1)
+                        );
+                    });
+                }
+                else if (curGenIndex =="9" && curTypeIndex != "21" ){
+                    $("#tbPkmnList .trPkmnList").filter(function() {
+                        $(this).toggle(
+                            ($(this).text().toLowerCase().indexOf(searchValue) > -1)
+                            && ( $(this).attr("data-pkmn-col-tags").toLowerCase().indexOf(columnList[curTypeIndex]) > -1)
+                        );
+                    });
+                }
+                else {
+                    $("#tbPkmnList .trPkmnList").filter(function() {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1);
+                    });
+                };
+
+                $( ".trGenSpacer" ).each(function(i) {
+                    nextGenSpacer = $(this).nextAll("tr:visible").first();
+                    if(nextGenSpacer.hasClass('trPkmnList'))
+                        $(this).show();
+                    else
+                        $(this).hide(); 
                 });
             }
-            else if (curGenIndex =="9" && curTypeIndex != "21" ){
-                $("#tbPkmnList .trPkmnList").filter(function() {
-                    $(this).toggle(
-                        ($(this).text().toLowerCase().indexOf(searchValue) > -1)
-                        && ( $(this).attr("data-pkmn-col-tags").toLowerCase().indexOf(columnList[curTypeIndex]) > -1)
-                    );
-                });
-            }
-            else {
+            else if (!viableOnly){
                 $("#tbPkmnList .trPkmnList").filter(function() {
                     $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1);
                 });
             };
-
-            $( ".trGenSpacer" ).each(function(i) {
-                nextGenSpacer = $(this).nextAll("tr:visible").first();
-                if(nextGenSpacer.hasClass('trPkmnList'))
-                    $(this).show();
-                else
-                    $(this).hide(); 
-            });
 
             $("#tbPkmnList .trPkmnList:visible").odd().removeClass("dark");
             $("#tbPkmnList .trPkmnList:visible").even().addClass("dark");
@@ -570,7 +582,14 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <input class="search" id="inputSearch" placeholder="Search..." />
+            <div id="modal-topbit">
+                <input class="search" id="inputSearch" placeholder="Search..." />
+                <div style="float:right;">
+                    <input type="checkbox" id="cbViable" style="margin: .1rem;" checked />
+                    <label for="cbViable" style="margin-right: .2em;">Viable picks only</label>
+                </div>
+            </div>
+            
             <hr/>
             <div id="divPkmnList" style="overflow-y: auto; height: 500px;">
             	<table style="width: 98%;">

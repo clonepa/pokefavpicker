@@ -4317,7 +4317,7 @@ pokedex = [
     "dexNumber": 421,
     "filename": "421-s",
     "icon": "421-s",
-    "name": "Cherrim",
+    "name": "Cherrim (Sunshine Form)",
     "type": [
       "Grass"
     ]
