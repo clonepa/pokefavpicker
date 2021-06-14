@@ -8067,6 +8067,7 @@ pokedex = [
   {
     "dexNumber": 792,
     "name": "Lunala",
+    "filename": "792_1",
     "legend": true,
     "type": [
       "Psychic",
