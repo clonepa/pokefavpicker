@@ -11,6 +11,7 @@ pokedex = [
   {
     "dexNumber": 2,
     "name": "Ivysaur",
+    "starter": true,
     "type": [
       "Grass",
       "Poison"
@@ -19,6 +20,7 @@ pokedex = [
   {
     "dexNumber": 3,
     "name": "Venusaur",
+    "starter": true,
     "type": [
       "Grass",
       "Poison"
@@ -59,6 +61,7 @@ pokedex = [
   {
     "dexNumber": 5,
     "name": "Charmeleon",
+    "starter": true,
     "type": [
       "Fire"
     ]
@@ -66,6 +69,7 @@ pokedex = [
   {
     "dexNumber": 6,
     "name": "Charizard",
+    "starter": true,
     "type": [
       "Fire",
       "Flying"
@@ -112,6 +116,7 @@ pokedex = [
     "dexNumber": 7,
     "name": "Squirtle",
     "starter": true,
+    "starter": true,
     "type": [
       "Water"
     ]
@@ -119,6 +124,7 @@ pokedex = [
   {
     "dexNumber": 8,
     "name": "Wartortle",
+    "starter": true,
     "type": [
       "Water"
     ]
@@ -126,6 +132,7 @@ pokedex = [
   {
     "dexNumber": 9,
     "name": "Blastoise",
+    "starter": true,
     "type": [
       "Water"
     ]
@@ -1804,6 +1811,7 @@ pokedex = [
   {
     "dexNumber": 153,
     "name": "Bayleef",
+    "starter": true,
     "type": [
       "Grass"
     ]
@@ -1811,6 +1819,7 @@ pokedex = [
   {
     "dexNumber": 154,
     "name": "Meganium",
+    "starter": true,
     "type": [
       "Grass"
     ]
@@ -1826,6 +1835,7 @@ pokedex = [
   {
     "dexNumber": 156,
     "name": "Quilava",
+    "starter": true,
     "type": [
       "Fire"
     ]
@@ -1833,6 +1843,7 @@ pokedex = [
   {
     "dexNumber": 157,
     "name": "Typhlosion",
+    "starter": true,
     "type": [
       "Fire"
     ]
@@ -1848,6 +1859,7 @@ pokedex = [
   {
     "dexNumber": 159,
     "name": "Croconaw",
+    "starter": true,
     "type": [
       "Water"
     ]
@@ -1855,6 +1867,7 @@ pokedex = [
   {
     "dexNumber": 160,
     "name": "Feraligatr",
+    "starter": true,
     "type": [
       "Water"
     ]
@@ -2657,6 +2670,7 @@ pokedex = [
   {
     "dexNumber": 253,
     "name": "Grovyle",
+    "starter": true,
     "type": [
       "Grass"
     ]
@@ -2664,6 +2678,7 @@ pokedex = [
   {
     "dexNumber": 254,
     "name": "Sceptile",
+    "starter": true,
     "type": [
       "Grass"
     ]
@@ -2691,6 +2706,7 @@ pokedex = [
   {
     "dexNumber": 256,
     "name": "Combusken",
+    "starter": true,
     "type": [
       "Fire",
       "Fighting"
@@ -2699,6 +2715,7 @@ pokedex = [
   {
     "dexNumber": 257,
     "name": "Blaziken",
+    "starter": true,
     "type": [
       "Fire",
       "Fighting"
@@ -2727,6 +2744,7 @@ pokedex = [
   {
     "dexNumber": 259,
     "name": "Marshtomp",
+    "starter": true,
     "type": [
       "Water",
       "Ground"
@@ -2735,6 +2753,7 @@ pokedex = [
   {
     "dexNumber": 260,
     "name": "Swampert",
+    "starter": true,
     "type": [
       "Water",
       "Ground"
@@ -4022,6 +4041,7 @@ pokedex = [
   {
     "dexNumber": 388,
     "name": "Grotle",
+    "starter": true,
     "type": [
       "Grass"
     ]
@@ -4029,6 +4049,7 @@ pokedex = [
   {
     "dexNumber": 389,
     "name": "Torterra",
+    "starter": true,
     "type": [
       "Grass",
       "Ground"
@@ -4045,6 +4066,7 @@ pokedex = [
   {
     "dexNumber": 391,
     "name": "Monferno",
+    "starter": true,
     "type": [
       "Fire",
       "Fighting"
@@ -4053,6 +4075,7 @@ pokedex = [
   {
     "dexNumber": 392,
     "name": "Infernape",
+    "starter": true,
     "type": [
       "Fire",
       "Fighting"
@@ -4069,6 +4092,7 @@ pokedex = [
   {
     "dexNumber": 394,
     "name": "Prinplup",
+    "starter": true,
     "type": [
       "Water"
     ]
@@ -4076,6 +4100,7 @@ pokedex = [
   {
     "dexNumber": 395,
     "name": "Empoleon",
+    "starter": true,
     "type": [
       "Water",
       "Steel"
@@ -5035,6 +5060,7 @@ pokedex = [
   {
     "dexNumber": 496,
     "name": "Servine",
+    "starter": true,
     "type": [
       "Grass"
     ]
@@ -5042,6 +5068,7 @@ pokedex = [
   {
     "dexNumber": 497,
     "name": "Serperior",
+    "starter": true,
     "type": [
       "Grass"
     ]
@@ -5057,6 +5084,7 @@ pokedex = [
   {
     "dexNumber": 499,
     "name": "Pignite",
+    "starter": true,
     "type": [
       "Fire",
       "Fighting"
@@ -5065,6 +5093,7 @@ pokedex = [
   {
     "dexNumber": 500,
     "name": "Emboar",
+    "starter": true,
     "type": [
       "Fire",
       "Fighting"
@@ -5081,6 +5110,7 @@ pokedex = [
   {
     "dexNumber": 502,
     "name": "Dewott",
+    "starter": true,
     "type": [
       "Water"
     ]
@@ -5088,6 +5118,7 @@ pokedex = [
   {
     "dexNumber": 503,
     "name": "Samurott",
+    "starter": true,
     "type": [
       "Water"
     ]
@@ -6421,6 +6452,7 @@ pokedex = [
   {
     "dexNumber": 651,
     "name": "Quilladin",
+    "starter": true,
     "type": [
       "Grass"
     ]
@@ -6428,6 +6460,7 @@ pokedex = [
   {
     "dexNumber": 652,
     "name": "Chesnaught",
+    "starter": true,
     "type": [
       "Grass",
       "Fighting"
@@ -6444,6 +6477,7 @@ pokedex = [
   {
     "dexNumber": 654,
     "name": "Braixen",
+    "starter": true,
     "type": [
       "Fire"
     ]
@@ -6451,6 +6485,7 @@ pokedex = [
   {
     "dexNumber": 655,
     "name": "Delphox",
+    "starter": true,
     "type": [
       "Fire",
       "Psychic"
@@ -6467,6 +6502,7 @@ pokedex = [
   {
     "dexNumber": 657,
     "name": "Frogadier",
+    "starter": true,
     "type": [
       "Water"
     ]
@@ -6474,6 +6510,7 @@ pokedex = [
   {
     "dexNumber": 658,
     "name": "Greninja",
+    "starter": true,
     "type": [
       "Water",
       "Dark"
@@ -7372,6 +7409,7 @@ pokedex = [
   {
     "dexNumber": 723,
     "name": "Dartrix",
+    "starter": true,
     "type": [
       "Grass",
       "Flying"
@@ -7380,6 +7418,7 @@ pokedex = [
   {
     "dexNumber": 724,
     "name": "Decidueye",
+    "starter": true,
     "type": [
       "Grass",
       "Ghost"
@@ -7396,6 +7435,7 @@ pokedex = [
   {
     "dexNumber": 726,
     "name": "Torracat",
+    "starter": true,
     "type": [
       "Fire"
     ]
@@ -7403,6 +7443,7 @@ pokedex = [
   {
     "dexNumber": 727,
     "name": "Incineroar",
+    "starter": true,
     "type": [
       "Fire",
       "Dark"
@@ -7419,6 +7460,7 @@ pokedex = [
   {
     "dexNumber": 729,
     "name": "Brionne",
+    "starter": true,
     "type": [
       "Water"
     ]
@@ -7426,6 +7468,7 @@ pokedex = [
   {
     "dexNumber": 730,
     "name": "Primarina",
+    "starter": true,
     "type": [
       "Water",
       "Fairy"
@@ -8247,6 +8290,7 @@ pokedex = [
   {
     "dexNumber": 811,
     "name": "Thwackey",
+    "starter": true,
     "type": [
       "Grass"
     ]
@@ -8255,6 +8299,7 @@ pokedex = [
     "dexNumber": 812,
     "filename": "812_1",
     "name": "Rillaboom",
+    "starter": true,
     "type": [
       "Grass"
     ]
@@ -8281,6 +8326,7 @@ pokedex = [
   {
     "dexNumber": 814,
     "name": "Raboot",
+    "starter": true,
     "type": [
       "Fire"
     ]
@@ -8289,6 +8335,7 @@ pokedex = [
     "dexNumber": 815,
     "filename": "815_1",
     "name": "Cinderace",
+    "starter": true,
     "type": [
       "Fire"
     ]
@@ -8315,6 +8362,7 @@ pokedex = [
   {
     "dexNumber": 817,
     "name": "Drizzile",
+    "starter": true,
     "type": [
       "Water"
     ]
@@ -8323,6 +8371,7 @@ pokedex = [
     "dexNumber": 818,
     "filename": "818_1",
     "name": "Inteleon",
+    "starter": true,
     "type": [
       "Water"
     ]
